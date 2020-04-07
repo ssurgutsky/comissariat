@@ -4,7 +4,10 @@
       @answerClick="processAnswer"
       @videoEnded="processVideoEnded"
       @audioEnded="processAudioEnded"
+      @musicEnded="processMusicEnded"
       @restartGame="restartGame"
+      @saveGame="saveGame"
+      @loadGame="loadGame"
       @timeExpired="processTimeExpired"
       @cheatSkip="cheatSkip"
       @cheatBack="cheatBack"
@@ -32,7 +35,9 @@ export default {
       mode: 0,
       MODE_QUESTION: 1,
       MODE_AFTER_QUESTION: 2,
-      MODE_ANSWER: 3
+      MODE_ANSWER: 3,
+
+      PURCHASE_ITEM_CHEATS: 'cheats'
     }
   },
   mounted () {
@@ -43,7 +48,16 @@ export default {
       this.mainView = this.$refs.mainView
       this.gameModel = this.$refs.gameModel
 
+      this.loadPurchasedItems()
+
       this.restartGame()
+    },
+
+    loadPurchasedItems () {
+      let value = this.gameModel.loadPurchasedItem(this.PURCHASE_ITEM_CHEATS)
+      if (value) {
+        this.mainView.enablePurchasedCheats()
+      }
     },
 
     restartGame () {
@@ -63,12 +77,26 @@ export default {
 
       this.mode = this.MODE_QUESTION
       this.playVideoAndAudio()
-      this.showBgndImage()
+
+      this.mainView.clearBgndImages()
+      this.clearAndShowImages()
+
       this.playAmbient()
+      this.playSoundFx()
       this.playMusic()
 
+      // User purchased some of cheat buttons
+      if (this.gameModel.purchaseItem === this.PURCHASE_ITEM_CHEATS) {
+        this.mainView.enablePurchasedCheats()
+        this.gameModel.savePurchasedItem(this.gameModel.purchaseItem)
+      }
+
       if (this.gameModel.getCurrentNavigateUrl()) {
-        window.open(this.gameModel.getCurrentNavigateUrl(), '_blank')
+        console.log(this.gameModel.getCurrentNavigateUrl())
+        // navigator.app.loadUrl(this.gameModel.getCurrentNavigateUrl(), {openExternal: true})
+        // window.location = this.gameModel.getCurrentNavigateUrl()
+        window.open(this.gameModel.getCurrentNavigateUrl(), '_system')
+        // location.replace(this.gameModel.getCurrentNavigateUrl())
       }
     },
 
@@ -80,6 +108,8 @@ export default {
       this.mode = this.MODE_AFTER_QUESTION
 
       this.playVideoAndAudio()
+      this.clearAndShowBgndImages()
+      this.mainView.clearImages()
     },
 
     showCurrentAnswers () {
@@ -87,19 +117,29 @@ export default {
 
       this.gameModel.prepareCurrentAnswers()
 
-      this.mainView.showAnswers(this.gameModel.getCurrentAnswers())
+      let isInputS = this.gameModel.inputSVarName !== ''
+      let inputSVal = this.gameModel.inputSVarValue
+
+      this.mainView.showAnswers(this.gameModel.getCurrentAnswers(), isInputS, inputSVal)
       this.mainView.setTimer(this.gameModel.getAnswerTime())
     },
 
     processAnswer (item) {
       console.log('>>>process answer', item.text)
 
+      this.mainView.setQuestionText('')
+
+      this.gameModel.setInputSVarValue(item.inputS)
+
       this.gameModel.setAnswerById(item.id)
       this.mainView.clearTimer()
       this.mainView.clearAnswers()
-      this.mainView.clearBgndImage()
+
+      this.mainView.clearBgndImages()
+      this.clearAndShowImages()
 
       this.playAmbient()
+      this.playSoundFx()
       this.playMusic()
 
       this.mode = this.MODE_ANSWER
@@ -140,6 +180,10 @@ export default {
     },
 
     playVideoSequence () {
+      if (!this.gameModel.hasCurrentVideo() && this.mode === this.MODE_QUESTION && !this.gameModel.isFinal) {
+        this.gameModel.setCurrentVideoIndex(0)
+      }
+
       if (!this.gameModel.hasCurrentVideo() && this.mode === this.MODE_AFTER_QUESTION) {
         this.gameModel.setCurrentVideoIndex(0)
       }
@@ -176,7 +220,7 @@ export default {
           (hasVideoEmpty && hasAudioEmpty) ||
           (hasVideoEmpty && !hasAudioPlaying) ||
           (hasAudioEmpty && !hasVideoPlaying) ||
-          (hasVideoPlaying && !hasAudioPlaying) ||
+          (hasVideoPlaying && !hasAudioPlaying && !this.gameModel.isFinal) ||
           (!hasVideoPlaying && !hasAudioPlaying)
         ) {
           console.log('case1')
@@ -218,9 +262,26 @@ export default {
       }
     },
 
-    showBgndImage () {
-      if (!this.gameModel.currentBgndImage) return
-      this.mainView.showBgndImage(this.gameModel.currentBgndImage)
+    clearAndShowBgndImages () {
+      // Hide video screen if there is no video but there is a background image
+      let hasVideoEmpty = this.gameModel.hasVideoEmpty()
+      if (hasVideoEmpty && this.gameModel.currentBgndImages) {
+        this.mainView.playVideo('NONE', false)
+      }
+
+      this.mainView.clearBgndImages()
+      this.mainView.showBgndImages(this.gameModel.currentBgndImages)
+    },
+
+    clearAndShowImages () {
+      // Hide video screen if there is no video but there is a background image
+      let hasVideoEmpty = this.gameModel.hasVideoEmpty()
+      if (hasVideoEmpty && this.gameModel.currentImages) {
+        this.mainView.playVideo('NONE', false)
+      }
+
+      this.mainView.clearImages()
+      this.mainView.showImages(this.gameModel.currentImages)
     },
 
     playAmbient () {
@@ -228,15 +289,50 @@ export default {
       this.mainView.playAmbient(name)
     },
 
-    playMusic () {
+    playSoundFx () {
+      let name = this.gameModel.currentSoundFxName
+      if (name && name !== '') {
+        this.mainView.playSFX(name)
+      }
+    },
+
+    playMusic (isNextRandomMusic) {
+      if (this.gameModel.hasMusicEmpty()) return
+
+      if (!this.gameModel.isNewMusic && !isNextRandomMusic) return
+
+      this.gameModel.setNextRandomMusic()
+
       let name = this.gameModel.getCurrentMusicName()
       this.mainView.playMusic(name)
+    },
+
+    processMusicEnded (name) {
+      console.log('music ended:', name)
+      this.playMusic(true)
     },
 
     processTimeExpired () {
       console.log('Time expired!')
       this.gameModel.processTimeExpired()
       this.showCurrentQuestion()
+    },
+
+    saveGame () {
+      if (!this.gameModel.saveGameData()) {
+        console.log('Cant save game!')
+      }
+    },
+
+    loadGame () {
+      if (this.gameModel.loadGameData()) {
+        this.mainView.stopVideo()
+        this.mainView.stopAudio()
+        this.mainView.clearTimer()
+        this.showCurrentQuestion()
+      } else {
+        console.log('Cant load game!')
+      }
     },
 
     /* CHEATS */

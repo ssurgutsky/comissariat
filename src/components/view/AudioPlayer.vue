@@ -1,12 +1,15 @@
 <template>
   <div>
-    <audio playsinline autoplay muted :loop="loop" ref="audioPlayer" @ended="onEnd">
+    <audio autoplay :loop="loop" ref="audioPlayer" @ended="onAudioEnded">
       <source type="audio/mp3" />
     </audio>
-    <audio playsinline autoplay muted ref="ambientPlayer">
+    <audio autoplay ref="ambientPlayer">
       <source type="audio/mp3" />
     </audio>
-    <audio playsinline autoplay muted ref="musicPlayer">
+    <audio autoplay ref="musicPlayer" @ended="onMusicEnded">
+      <source type="audio/mp3" />
+    </audio>
+    <audio autoplay ref="sfxPlayer">
       <source type="audio/mp3" />
     </audio>
   </div>
@@ -21,6 +24,7 @@ export default {
       audioPlayer: null,
       ambientPlayer: null,
       musicPlayer: null,
+      sfxPlayer: null,
       currentAudioName: '',
       currentAmbientName: '',
       currentMusicName: '',
@@ -38,6 +42,7 @@ export default {
       this.audioPlayer = this.$refs.audioPlayer
       this.ambientPlayer = this.$refs.ambientPlayer
       this.musicPlayer = this.$refs.musicPlayer
+      this.sfxPlayer = this.$refs.sfxPlayer
     },
 
     playAudio (name, loop) {
@@ -49,8 +54,11 @@ export default {
 
       if (name.toUpperCase().includes('SILENT_')) {
         let seconds = name.toUpperCase().replace('SILENT_', '')
-        this.silentTimerId = setTimeout(this.onEnd, seconds * 1000)
+        this.silentTimerId = setTimeout(this.onAudioEnded, seconds * 1000)
         return
+      }
+      if (this.musicPlayer.src !== '') {
+        this.musicPlayer.volume = 0.05
       }
       this.audioPlayer.loop = loop
       this.audioPlayer.src = require('@/assets/audio/' + name + '.mp3')
@@ -58,6 +66,9 @@ export default {
 
     stopAudio () {
       this.audioPlayer.pause()
+      if (this.musicPlayer.src !== '') {
+        this.musicPlayer.volume = 0.4
+      }
     },
 
     clearSilentTimer () {
@@ -65,13 +76,13 @@ export default {
       this.silentTimerId = 0
     },
 
-    onEnd () {
+    onAudioEnded () {
       //      console.log('audioEnded', this.currentAudioName)
       this.$emit('audioEnded', this.currentAudioName)
     },
 
     playAmbient (name) {
-      // console.log(name)
+      console.log('ambient', name)
 
       if (name === '' || name === this.currentAmbientName) {
         return
@@ -89,9 +100,9 @@ export default {
     },
 
     playMusic (name) {
-      // console.log(name)
+      console.log(name)
 
-      if (name === '' || name === this.currentMusicName) {
+      if (name === '') {
         return
       }
 
@@ -102,8 +113,21 @@ export default {
         return
       }
 
-      this.musicPlayer.loop = true
       this.musicPlayer.src = require('@/assets/audio/' + name + '.mp3')
+    },
+
+    onMusicEnded () {
+      //      console.log('musicEnded', this.currentMusicName)
+      this.$emit('musicEnded', this.currentMusicName)
+    },
+
+    playSFX (name) {
+      console.log('SFX', name)
+      this.sfxPlayer.src = require('@/assets/audio/' + name + '.mp3')
+    },
+
+    stopSFX () {
+      this.sfxPlayer.pause()
     }
   }
 }

@@ -20,7 +20,7 @@
 import imageUtils from '@/components/utils/ImageUtils.js'
 
 export default {
-  name: 'ImagePlayer',
+  name: 'BgndImagePlayer',
   data () {
     return {
       imagePlayer: null,
@@ -74,4 +74,5 @@ export default {
 }
 </script>
 
-<style scoped></style>
+<style scoped>
+</style>

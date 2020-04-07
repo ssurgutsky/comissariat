@@ -1,13 +1,19 @@
 <template>
   <div ref="mainView" class="main-view">
     <VideoPlayer class="video-container" ref="videoPlayer" @videoEnded="processVideoEnded"/>
+    <BgndImagePlayer class="bgnd-image-container" ref="bgndImagePlayer"/>
     <ImagePlayer class="image-container" ref="imagePlayer"/>
-    <AudioPlayer class="audio-container" ref="audioPlayer" @audioEnded="processAudioEnded"/>
+    <AudioPlayer class="audio-container" ref="audioPlayer"
+      @audioEnded="processAudioEnded"
+      @musicEnded="processMusicEnded"
+    />
     <QuestionView class="questions-container" ref="questionView"/>
     <TimerView class="timer-container" ref="timerView" @timeExpired="processTimeExpired" />
     <AnswersList class="answers-container" ref="answersView" @answerClick="processAnswerClick" />
     <ControlsView class="controls-container" ref="controlsView"
       @restartGame="restartGame"
+      @saveGame="saveGame"
+      @loadGame="loadGame"
       @cheatSkip="cheatSkip"
       @cheatBack="cheatBack"
       @cheatEpisode="cheatEpisode"
@@ -17,6 +23,7 @@
 
 <script>
 import VideoPlayer from './VideoPlayer.vue'
+import BgndImagePlayer from './BgndImagePlayer.vue'
 import ImagePlayer from './ImagePlayer.vue'
 import AudioPlayer from './AudioPlayer.vue'
 import TimerView from './TimerView.vue'
@@ -27,6 +34,7 @@ import ControlsView from './ControlsView.vue'
 export default {
   components: {
     VideoPlayer,
+    BgndImagePlayer,
     ImagePlayer,
     AudioPlayer,
     TimerView,
@@ -46,13 +54,13 @@ export default {
       this.$refs.questionView.setQuestion(txt)
     },
 
-    showAnswers (items) {
-      this.$refs.answersView.setAnswers(items)
+    showAnswers (items, isInputS, inputSVal) {
+      this.$refs.answersView.setAnswers(items, isInputS, inputSVal)
       this.$refs.answersView.showAnswers()
     },
 
     clearAnswers () {
-      this.$refs.answersView.setAnswers([])
+      this.$refs.answersView.setAnswers([], null)
       this.$refs.answersView.hideAnswers()
     },
 
@@ -68,16 +76,32 @@ export default {
       this.$refs.videoPlayer.playVideo(name, loop)
     },
 
+    stopVideo () {
+      this.$refs.videoPlayer.stopVideo()
+    },
+
     playAudio (name, loop) {
       this.$refs.audioPlayer.playAudio(name, loop)
     },
 
-    showBgndImage (name) {
-      this.$refs.imagePlayer.showBgndImage(name)
+    stopAudio () {
+      this.$refs.audioPlayer.stopAudio()
     },
 
-    clearBgndImage (name) {
-      this.$refs.imagePlayer.clearBgndImage()
+    showBgndImages (images) {
+      this.$refs.bgndImagePlayer.showImages(images)
+    },
+
+    clearBgndImages () {
+      this.$refs.bgndImagePlayer.clearImages()
+    },
+
+    showImages (images) {
+      this.$refs.imagePlayer.showImages(images)
+    },
+
+    clearImages () {
+      this.$refs.imagePlayer.clearImages()
     },
 
     playAmbient (name, loop) {
@@ -88,12 +112,12 @@ export default {
       this.$refs.audioPlayer.playMusic(name)
     },
 
-    stopVideo () {
-      this.$refs.videoPlayer.stopVideo()
+    playSFX (name, loop) {
+      this.$refs.audioPlayer.playSFX(name)
     },
 
-    stopAudio () {
-      this.$refs.audioPlayer.stopAudio()
+    stopSFX () {
+      this.$refs.audioPlayer.stopSFX()
     },
 
     processAnswerClick (item) {
@@ -111,6 +135,11 @@ export default {
       this.$emit('audioEnded', name)
     },
 
+    processMusicEnded (name) {
+      // console.log('musicEnded', name)
+      this.$emit('musicEnded', name)
+    },
+
     processTimeExpired () {
       // console.log('timeExpired')
       this.$emit('timeExpired')
@@ -118,6 +147,14 @@ export default {
 
     restartGame () {
       this.$emit('restartGame')
+    },
+
+    saveGame () {
+      this.$emit('saveGame')
+    },
+
+    loadGame () {
+      this.$emit('loadGame')
     },
 
     /* CHEATS */
@@ -132,6 +169,10 @@ export default {
     cheatEpisode () {
       console.log('cheatEpisode')
       this.$emit('cheatEpisode')
+    },
+
+    enablePurchasedCheats () {
+      this.$refs.controlsView.enablePurchasedCheats()
     }
   }
 }
@@ -146,8 +187,30 @@ export default {
     display: none;
   }
 
-  @media (orientation: portrait) {
+  @media screen and (max-aspect-ratio: 13/9) {
     .video-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 50vh;
+      margin: 0;
+      padding: 0;
+      z-index: -4;
+    }
+
+    .bgnd-image-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 50vh;
+      margin: 0;
+      padding: 0;
+      z-index: -3;
+    }
+
+    .image-container {
       position: fixed;
       top: 0;
       left: 0;
@@ -158,7 +221,7 @@ export default {
       z-index: -2;
     }
 
-    .image-container {
+    .yandex-money-container {
       position: fixed;
       top: 0;
       left: 0;
@@ -202,8 +265,30 @@ export default {
     }
   }
 
-  @media (orientation: landscape) {
+  @media screen and (min-aspect-ratio: 13/9) {
     .video-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 50vw;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      z-index: -4;
+    }
+
+    .image-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 50vw;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      z-index: -3;
+    }
+
+    .bgnd-image-container {
       position: fixed;
       top: 0;
       left: 0;
@@ -214,7 +299,7 @@ export default {
       z-index: -2;
     }
 
-    .image-container {
+    .yandex-money-container {
       position: fixed;
       top: 0;
       left: 0;

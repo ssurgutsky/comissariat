@@ -1,5 +1,7 @@
 <template>
-  <div>{{txtQuestion}}</div>
+  <div>
+    <p style="white-space: pre-line">{{txtQuestion}}</p>
+  </div>
 </template>
 
 <script>

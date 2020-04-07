@@ -1,4 +1,4 @@
-[mark_4ls21ny38b998843721a]Voenkomat v1.0[BGNDVIDEO Intro][ANSWERTIME 25][TIMEEXPIRED GAME_SAVEPOINT]
+[START]Voenkomat v1.0[BGNDVIDEO Intro][ANSWERSORDER OFF]{this.lang='ru';''}{script initSystem}
 	НАЧАТЬ ИГРУ / START GAME
 		[GAME_SAVEPOINT]Несколько дней назад тебе пришла повестка. В ней было написано, что сегодня ты должен явиться в военкомат. Что будешь делать?[BGNDVIDEO none][BGNDIMAGE notification.jpg][AMBIENT before]
 			Придется идти в военкомат.
@@ -8,7 +8,7 @@
 							Да, дам, немного.
 								[mark_qoskzo3b9r2qfl3uxnm6]Бомж: Спасибо, друг! А то наше правительство давно плюнуло на меня, хотя раньше я воевал за него...[BGNDIMAGE dirty_hand.jpg]
 									Пойду дальше.
-										[Episode1]Ты стоишь перед воротами военкомата. Может вернуться домой, пока не поздно?[BGNDIMAGE gates.jpg,gates2.jpg]
+										[EPISODE1]Ты стоишь перед воротами военкомата. Может вернуться домой, пока не поздно?[BGNDIMAGE gates.jpg,gates2.jpg]
 											Пожалуй так и сделаю.
 												[next_week_knock_knock]Через несколько дней в твою дверь постучали. Кроме тебя никого дома нет. Откроешь?[BGNDIMAGE antipriziv.ru.2_1.jpg]
 													Посмотрю в дверной глазок.
@@ -38,7 +38,7 @@
 																					>>>
 																						[taken_to_commissariat_next_morning]Утром тебя подкараулили сотрудники военкомата, вручили повестку, заставили расписаться и сказали прибыть в военкомат через три дня.[BGNDIMAGE force_deliver.jpg]
 																							>>>
-																								[mark_6g7920903on5zu0k6e49][GOTO Episode2]
+																								[mark_6g7920903on5zu0k6e49][GOTO EPISODE2]
 																				[Mark_Final107][FINAL Соседка умерла прямо на пороге твоей квартиры, ей действительно было очень плохо... Отрицательный финал!][BGNDIMAGE peephole2.jpg]
 																	Открою дверь и помогу.
 																		[mark_en51dzk21jid9rs2zy21]Ты открыл дверь. Вместо соседки на пороге появились работники военкомата.[BGNDIMAGE open_the_door.jpg]
@@ -54,7 +54,7 @@
 																							Распишусь в повестке, а что делать...
 																								[mark_i7gzf16151m8ugfgzqs0]Сотрудники военкомата ушли довольными. Через три дня тебе приказано явиться в военкомат.[BGNDIMAGE open_the_door.jpg]
 																									>>>
-																										[Episode2]Настал день явки в военкомат. Что будешь делать?[BGNDIMAGE window.jpg]
+																										[EPISODE2]Настал день явки в военкомат. Что будешь делать?[BGNDIMAGE window.jpg]
 																											Не собираюсь никуда идти.
 																												[mark_7vfc6wbny4uf19z4cwmu][GOTO Mark_Final104]
 																											Придется пойти в военкомат.
@@ -104,7 +104,7 @@
 																																													[go_to_commissariat]Пойду в военкомат.
 																																														[gates_second_try]Ты стоишь перед воротами военкомата. Может вернуться домой, пока не поздно?[BGNDIMAGE gates.jpg,gates2.jpg]
 																																															[entering_the_gates]Зайду в ворота.[AMBIENT inside]
-																																																[Episode3][GOTO major_phrases1,major_phrases2,major_phrases3]
+																																																[EPISODE3][GOTO major_phrases1,major_phrases2,major_phrases3]
 																																																	>>>
 																																																		[major_phrases1]Майор: "Ну, что, товарищ уклонист, прибыли?"[BGNDIMAGE at_the_commissariat_door.jpg]
 																																																			[let_me_go]Отпустите меня, товарищ майор!
@@ -120,7 +120,7 @@
 																																																													Погодите, погодите я сейчас сбегаю!
 																																																														[mark_41i5tbbq1901ck0quj85]Заходи внутрь, это приказ![BGNDIMAGE at_the_commissariat_door.jpg]
 																																																															Эх, сорвалось...
-																																																																[mark_546368216404707x5op7][GOTO Episode4]
+																																																																[mark_546368216404707x5op7][GOTO EPISODE4]
 																																																												[colonel_feels_bad]Я дважды команду не повторяю![BGNDIMAGE at_the_commissariat_door.jpg]
 																																																													[ok_i_am_hurry]Хорошо! Я мигом!
 																																																														[mark_91o1i03owhwal92at067][GOTO Mark_Final7,Mark_Final206]
@@ -143,7 +143,7 @@
 																																																													Нет, я как раз иду ко входу в воротах.
 																																																														[mark_65afs4xq912e6y79p0ry]Вход - это отверстие извне во внутрь, именуемое выходом в обратном направлении. Тебе в другую дверь. Заходи! Ать-два![BGNDIMAGE at_the_commissariat_door.jpg]
 																																																															>>>
-																																																																[Episode4][GOTO register_woman1,register_woman2]
+																																																																[EPISODE4][GOTO register_woman1,register_woman2]
 																																																																	>>>
 																																																																		[register_woman1]Давайте паспорт и приписное.[BGNDIMAGE register_woman.jpg]
 																																																																			Тут какое то недоразумение! У меня есть отсрочка!
@@ -186,13 +186,13 @@
 																																																																															[i_have_a_busines_evening]Эээ... я тут вспомнил, у меня вечером дела!
 																																																																																[mark_p7a6zqk6p6g5apx1fqwt]Ну что ж, бывает...[BGNDIMAGE register_woman2.jpg]
 																																																																																	[go_to_medical_comission]Пойду на медкомиссию.
-																																																																																		[mark_xcgxn72vo842sjp13q0m][GOTO fainted_guy,Episode5]
+																																																																																		[mark_xcgxn72vo842sjp13q0m][GOTO fainted_guy,EPISODE5]
 																																																																																			>>>
 																																																																																				[fainted_guy]Майор: "Ну орел! Долго продержался, нам бы таких бойцов в разведку!"[BGNDIMAGE guy_fainted.jpg]
 																																																																																					А что с ним?
 																																																																																						[mark_wc531g1k084625i6j405]Тебя это не касается! Будешь косить от армии, с тобой случится то же самое.[BGNDIMAGE guy_fainted.jpg]
 																																																																																							Пойду дальше.
-																																																																																								[Episode5]Терапевт: Кто следующий? Подходим![BGNDIMAGE therapist.jpg]
+																																																																																								[EPISODE5]Терапевт: Кто следующий? Подходим![BGNDIMAGE therapist.jpg]
 																																																																																									Если очереди нет, то могу зайти я.
 																																																																																										[mark_gy83l150dbdgxzn19x04]По тебе итак видно, что здоров, сразу пишу: "Годен"![BGNDIMAGE therapist.jpg]
 																																																																																											Вспомню плакат.
@@ -208,7 +208,7 @@
 																																																																																																					>>>
 																																																																																																						[you_couldnt_escape]К сожалению, в туалет зашел майор и догадался, что ты намеревался сделать. Ты отмазался, сказав, что просто разглядывал воробья в окне.[BGNDIMAGE taulet2.jpg]
 																																																																																																							[piss]Справлю нужду и продолжу прохождение медкомиссии.
-																																																																																																								[Episode6][GOTO optometrist_case1,optometrist_case2,go_to_surgeon]
+																																																																																																								[EPISODE6][GOTO optometrist_case1,optometrist_case2,go_to_surgeon]
 																																																																																																									>>>
 																																																																																																										[go_to_surgeon]Хирург: "Годен! Следующий! Заходи..."[BGNDIMAGE surgeon.jpg]
 																																																																																																											[GOTO coming_to_surgeon]
@@ -270,7 +270,7 @@
 																																																																																																																																					Ну вот, я выиграл!
 																																																																																																																																						[malingerer]А вы, молодой человек, симулянт! Все видите оказывается... Годен![BGNDIMAGE optometrist.jpg]
 																																																																																																																																							[go_to_ent]Пойду к лору.
-																																																																																																																																								[mark_198ht9jhsy3pwcu72e6t][GOTO strange_hand,Episode7]
+																																																																																																																																								[mark_198ht9jhsy3pwcu72e6t][GOTO strange_hand,EPISODE7]
 																																																																																																																																									>>>
 																																																																																																																																										[strange_hand]В коридоре стоит капитан с забинтованной рукой.[BGNDIMAGE captain_hand.jpg]
 																																																																																																																																											Товарищ капитан, а что у вас с рукой?
@@ -282,7 +282,7 @@
 																																																																																																																																																	>>>
 																																																																																																																																																		[captain_said_too_many_questions]Отставить! Много вопросов задаете, товарищ призывник! Займитесь своими делами.[BGNDIMAGE captain_hand.jpg]
 																																																																																																																																																			[go_from_captain_with_hand]Пойду дальше.
-																																																																																																																																																				[Episode7]Это лор. Удивительно, но она, как две капли воды похожа на женщину-терапевта, у которой ты уже был.[BGNDIMAGE ent.jpg]
+																																																																																																																																																				[EPISODE7]Это лор. Удивительно, но она, как две капли воды похожа на женщину-терапевта, у которой ты уже был.[BGNDIMAGE ent.jpg]
 																																																																																																																																																					Промолчу.
 																																																																																																																																																						[mark_4w735qutef2vs6y933qb]Спроси её про терапевта! Неужели тебе не интересно, сестра-близнец она ей или нет?[BGNDIMAGE ent.jpg]
 																																																																																																																																																							[are_you_siams]Извините, а врач-терапевт это ваша сестра-близнец?
@@ -300,7 +300,7 @@
 																																																																																																																																																																			>>>
 																																																																																																																																																																				[you_are_absolutely_health]Все! Некогда мне тут с тобой лясы точить. Годен! Годен! Годен! Годен! Иди к полковнику.[BGNDIMAGE ent.jpg]
 																																																																																																																																																																					Пойду к полковнику.
-																																																																																																																																																																						[Episode8]В кабинет полковника очередь. Придется подождать...[BGNDIMAGE queue_to_colonel.jpg]
+																																																																																																																																																																						[EPISODE8]В кабинет полковника очередь. Придется подождать...[BGNDIMAGE queue_to_colonel.jpg]
 																																																																																																																																																																							Пройдусь по военкомату.
 																																																																																																																																																																								[mark_op57v6f01qsmaxtt9fc4]Куда пойдем?[BGNDIMAGE queue_to_colonel.jpg]
 																																																																																																																																																																									Загляну на второй этаж.
@@ -312,7 +312,7 @@
 																																																																																																																																																																															[back_to_queue_to_colonel]Вернусь в очередь к полковнику.
 																																																																																																																																																																																[mark_664deux1n4e7c2hh4594]Ну вот, наконец то, настала твоя очередь! Заходи в кабинет полковника.[BGNDIMAGE queue_to_colonel.jpg]
 																																																																																																																																																																																	>>>[AMBIENT colonel]
-																																																																																																																																																																																		[Episode6]Р-р-равняйсь! Не слышу щелчка при повороте головы![BGNDIMAGE colonel.jpg]
+																																																																																																																																																																																		[EPISODE6]Р-р-равняйсь! Не слышу щелчка при повороте головы![BGNDIMAGE colonel.jpg]
 																																																																																																																																																																																			>>>
 																																																																																																																																																																																				[mark_illa5jeb1ttrif5f6494]Давай сюда свой обходной лист, посмотрим, где служить будешь. Так-с... здоров![BGNDIMAGE colonel.jpg]
 																																																																																																																																																																																					>>>
@@ -428,7 +428,7 @@
 																																																																																																																																																																																																																																																			>>>
 																																																																																																																																																																																																																																																				[mark_d58870de84yht5g63g1v][GOTO Mark_Final103]
 																																																																																																																																																																																																																																															Пойду в суд.
-																																																																																																																																																																																																																																																[Episode9]В тот же день ты подал документы в суд. По какой из причин?[BGNDIMAGE court_building.jpg][AMBIENT court]
+																																																																																																																																																																																																																																																[EPISODE9]В тот же день ты подал документы в суд. По какой из причин?[BGNDIMAGE court_building.jpg][AMBIENT court]
 																																																																																																																																																																																																																																																	Неправомерное решение медицинской комиссии.
 																																																																																																																																																																																																																																																		[mark_337c5wojqf6dgxy500p3]В итоге тебя направили на прохождение другой медкомиссии, которая также признала тебя годным. Но ты можешь обжаловать решение в высшей инстанции.[BGNDIMAGE another_medical_board.jpg]
 																																																																																																																																																																																																																																																			>>>
@@ -654,11 +654,11 @@
 																																																																																													[GOTO go_to_next_doctor]
 																																																																																													[GOTO wait_wait]
 																																																																																					Пройду мимо.
-																																																																																						[mark_7c58x78797m2nm76mlfr][GOTO Episode5]
+																																																																																						[mark_7c58x78797m2nm76mlfr][GOTO EPISODE5]
 																																																																																					Товарищ майор, а что с ним?
 																																																																																						[mark_7n6b24pqb2n39m9y0ayo]Не повезло парню. Так умело притворялся дебилом, что когда получил отсрочку на радостях совсем разум потерял. Везите его теперь в дурку, мамаша...[BGNDIMAGE guy_fainted.jpg]
 																																																																																							>>>
-																																																																																								[mark_spqipm5zh1j8k2g300vi][GOTO Episode5]
+																																																																																								[mark_spqipm5zh1j8k2g300vi][GOTO EPISODE5]
 																																																																															Эээ... ну... ладно, куплю попкорн и кока-колу вашим детям.
 																																																																																[mark_f98459vs70ggccdrmd38]Прошу прощения, это была шутка. Я замужем и очень верна своему мужу. Проходите медкомиссию.[BGNDIMAGE register_woman2.jpg]
 																																																																																	[GOTO go_to_medical_comission]
@@ -676,9 +676,9 @@
 																																																													Я лучше домой пойду, у меня дел много.
 																																																														[mark_3tn4148qt995623vixp5]Ты что, первый раз на свет родился? Сурка образ жизни ведете, товарищ уклонист. В эту дверь шагом марш![BGNDIMAGE at_the_commissariat_door.jpg]
 																																																															>>>
-																																																																[mark_9j01ke66197c6i910199][GOTO Episode4]
+																																																																[mark_9j01ke66197c6i910199][GOTO EPISODE4]
 																																																											Зайду в военкомат.
-																																																												[mark_05654liw92n250g7xf48][GOTO Episode4]
+																																																												[mark_05654liw92n250g7xf48][GOTO EPISODE4]
 																																																						[sun_blows]Это верно замечено, погода портится, солнце в глаза уже не дует.[BGNDIMAGE at_the_commissariat_door.jpg]
 																																																							>>>
 																																																								[mark_q41gmds53v6qnb7qzf7o][GOTO come_inside,vodka]
@@ -729,7 +729,7 @@
 																														[in_the_yard3]В лифте ты встретил одноклассницу. Она зовет тебя на речку купаться.[BGNDIMAGE classmate.jpg]
 																															[GOTO refuse]
 																															Конечно соглашусь!
-																																[Episode10]Она просит подождать ее на улице, пока она сходит переодеть бикини. Подождешь?[BGNDIMAGE classmate.jpg]
+																																[EPISODE10]Она просит подождать ее на улице, пока она сходит переодеть бикини. Подождешь?[BGNDIMAGE classmate.jpg]
 																																	Без проблем!
 																																		[mark_uw7s29w54k7rz886dsav]Ты вышел на улицу. Постоял минут двадцать. Что-то долго её нет... а рядом во дворе знакомые пацаны пьют пиво.[BGNDIMAGE boys_drink_beer.jpg]
 																																			Подожду еще.
@@ -868,7 +868,7 @@
 																							Откажусь расписываться.
 																								[mark_t5b368h13w93n4tmxu14]В присутствии двух свидетелей тебе зачитали текст повестки, взяли их подписи и сказали явиться в военкомат через три дня.[BGNDIMAGE open_the_door.jpg]
 																									>>>
-																										[mark_rmn2c3f5vic0t67tkv02][GOTO Episode2]
+																										[mark_rmn2c3f5vic0t67tkv02][GOTO EPISODE2]
 																			Не рассказывай мне сказки, сантехник!
 																				[Mark_Final108][FINAL Это был действительно сантехник. Ты затопил квартиру этажом ниже... Отрицательный финал!][BGNDIMAGE flooded_neighbors.jpg]
 																	[GOTO make_illusion_nobody_home]
@@ -876,21 +876,21 @@
 													[GOTO yes_open_the_door]
 											[GOTO entering_the_gates]
 							Пройду мимо.
-								[mark_8ao73a15j7r01imlf02a][GOTO Episode1]
+								[mark_8ao73a15j7r01imlf02a][GOTO EPISODE1]
 						[in_the_yard7]В подъезде ты встретил старика, он громко ругается.[BGNDIMAGE pensioner.jpg]
 							Спрошу, в чем причина?
 								[mark_siw62ihoiv35e682oot4]Пенсионер: "Почему у меня, бывшего полковника СССР пенсия в два раза меньше, чем у соседской пенсионерки, бывшей секретутки из обкома?"[BGNDIMAGE pensioner.jpg]
 									Пойду дальше.
-										[mark_m89e25w33u3y432zq5nm][GOTO Episode1]
+										[mark_m89e25w33u3y432zq5nm][GOTO EPISODE1]
 							Пройду мимо.
-								[mark_39b67271cvjj7kyp92sn][GOTO Episode1]
+								[mark_39b67271cvjj7kyp92sn][GOTO EPISODE1]
 						[in_the_yard8]Во дворе дома ты встретил знакомого пенсионера, участника ВОВ. Он грустно посмотрел на тебя.[BGNDIMAGE pensioner2.jpg]
 							Спрошу, что у него случилось?
 								[mark_0zosej10p4o4rui14pk9]Пенсионер: "Сходил, заплатил за квартиру, и пенсии не хватило на лекарства. А ведь я воевал за нашу родину, чтобы всем хорошо жилось..."[BGNDIMAGE pensioner2.jpg]
 									Пойду дальше.
-										[mark_3uf4dm83t228jp1y2kzi][GOTO Episode1]
+										[mark_3uf4dm83t228jp1y2kzi][GOTO EPISODE1]
 							Пройду мимо.
-								[mark_03s579mbd5c3t7735sd7][GOTO Episode1]
+								[mark_03s579mbd5c3t7735sd7][GOTO EPISODE1]
 			Проигнорирую.
 				[mark_128j2s6m48h4gb54jic5][GOTO next_week_knock_knock]
 			Мне все равно, я живу на съемной хате.
@@ -914,7 +914,7 @@
 					У меня отсрочка.
 						[mark_p2g3b5tvj66fp96b37qd]Возможно это какая-то ошибка. Лучше сходить выяснить.[BGNDIMAGE notification.jpg]
 							>>>
-								[mark_53c49gprs94yqr055g4u][GOTO Episode1]
+								[mark_53c49gprs94yqr055g4u][GOTO EPISODE1]
 					Я женского пола.
 						[Mark_Final203][FINAL У тебя два варианта: представить себя призывником или дать сыграть своему мужчине.][BGNDIMAGE notification.jpg]
 					Я полковник.
@@ -925,3 +925,17 @@
 						[infinite_loop]Скоротаем вечерок?[BGNDIMAGE evening.jpg]
 							Так точно!
 								[mark_64053x2uu54m9bzo6z86][GOTO infinite_loop]
+	[buy_episodes]Эпизоды игры.
+		[mark_7ay0crivt5fo2krptr7j]{this.productId = "com.kri_games.voenkomat.episodes";'';}{script getPayment}
+			
+				[wait2]...[BGNDIMAGE notification.jpg]
+					
+						[mark_7u249b2lf7c472494fvi]{script checkPayment2}
+							
+								[payment_success2]...[BGNDIMAGE notification.jpg][PURCHASE cheats]
+									
+										[mark_lo9fb6iz5619s1v1w24v]Кнопка переключения эпизодов "EPISODE" появилась внизу. Она будет доступна всегда, пока ты не удалишь игру.[BGNDVIDEO 205]
+											>>>
+												[mark_790313417a53d817ku7r][GOTO START]
+								[payment_fail2]Что то не так, попробуй еще раз.[BGNDIMAGE notification.jpg]
+									[GOTO buy_episodes]
