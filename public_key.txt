@@ -1,0 +1,4 @@
+ProductId: com.kri_games.voenkomat.coin1
+
+Play Console -> Apps -> an App -> Development Tools -> Services and API
+

@@ -1,0 +1,927 @@
+[mark_4ls21ny38b998843721a]Voenkomat v1.0[BGNDVIDEO Intro][ANSWERTIME 25][TIMEEXPIRED GAME_SAVEPOINT]
+	НАЧАТЬ ИГРУ / START GAME
+		[GAME_SAVEPOINT]Несколько дней назад тебе пришла повестка. В ней было написано, что сегодня ты должен явиться в военкомат. Что будешь делать?[BGNDVIDEO none][BGNDIMAGE notification.jpg][AMBIENT before]
+			Придется идти в военкомат.
+				[mark_u52a9y1332y5650m6s01][GOTO in_the_yard1,in_the_yard2,in_the_yard3,in_the_yard4,in_the_yard5,in_the_yard6,in_the_yard7,in_the_yard8]
+					>>>
+						[in_the_yard6]Во дворе в мусорных баках роется бомж. Он попросил у тебя мелочь. Подашь?[BGNDIMAGE homeless.jpg]
+							Да, дам, немного.
+								[mark_qoskzo3b9r2qfl3uxnm6]Бомж: Спасибо, друг! А то наше правительство давно плюнуло на меня, хотя раньше я воевал за него...[BGNDIMAGE dirty_hand.jpg]
+									Пойду дальше.
+										[Episode1]Ты стоишь перед воротами военкомата. Может вернуться домой, пока не поздно?[BGNDIMAGE gates.jpg,gates2.jpg]
+											Пожалуй так и сделаю.
+												[next_week_knock_knock]Через несколько дней в твою дверь постучали. Кроме тебя никого дома нет. Откроешь?[BGNDIMAGE antipriziv.ru.2_1.jpg]
+													Посмотрю в дверной глазок.
+														[mark_fpn920353ff98xgm9x5g][GOTO neighbor,doctors,plumber,nothing_at_peephole]
+															>>>
+																[nothing_at_peephole]Ничего не видно... глазок чем то залепили. Откроешь, чтобы разобраться?[BGNDIMAGE black.jpg]
+																	[make_illusion_nobody_home]Сделаю вид, что никого нет дома.
+																		[mark_m76r6220ic5ksyw43en2]Стук не прекращался, но потом все стихло. Похоже они ушли...[BGNDIMAGE antipriziv.ru.2_2.jpg]
+																			>>>
+																				[mark_yqi1n9rglb176ar8to3f][GOTO taken_to_commissariat_next_morning]
+																	[yes_open_the_door]Да.
+																		[mark_lq686n2cg58f1wr41u12][GOTO given_a_notification]
+																[Doctors]На пороге стоят врачи, просят помочь им опознать труп.[BGNDIMAGE peephole2.jpg]
+																	Помогу.
+																		[mark_34mxydod6lw0v4amdxe2]Ты открыл дверь. Врачи сняли с себя халаты и оказались работниками военкомата.[BGNDIMAGE open_the_door.jpg]
+																			>>>
+																				[mark_5wx61a7r484zyt1z0bx7][GOTO given_a_notification]
+																	Откажусь.
+																		[mark_l15qfym048gl132t4349]Врачи поговорили еще немного и ушли.[BGNDIMAGE peephole2.jpg]
+																			>>>
+																				[mark_fu14pvw78ypcscd169yr][GOTO taken_to_commissariat_next_morning]
+																[neighbor]На пороге стоит соседка, она говорит, что ей плохо и просит тебя помочь ей.[BGNDIMAGE peephole.jpg]
+																	Откажусь помогать.
+																		[mark_c34mb2024pp564jsa98b][GOTO neighbor_waited,Mark_Final107]
+																			>>>
+																				[neighbor_waited]Соседка постояла еще немного, а потом ушла...[BGNDIMAGE peephole.jpg]
+																					>>>
+																						[taken_to_commissariat_next_morning]Утром тебя подкараулили сотрудники военкомата, вручили повестку, заставили расписаться и сказали прибыть в военкомат через три дня.[BGNDIMAGE force_deliver.jpg]
+																							>>>
+																								[mark_6g7920903on5zu0k6e49][GOTO Episode2]
+																				[Mark_Final107][FINAL Соседка умерла прямо на пороге твоей квартиры, ей действительно было очень плохо... Отрицательный финал!][BGNDIMAGE peephole2.jpg]
+																	Открою дверь и помогу.
+																		[mark_en51dzk21jid9rs2zy21]Ты открыл дверь. Вместо соседки на пороге появились работники военкомата.[BGNDIMAGE open_the_door.jpg]
+																			>>>
+																				[mark_0xrec6jnoww97f86378s][GOTO given_a_notification]
+																[plumber]Ничего не видно. Ты уже забыл, что неделю назад местная шантропа спалила тебе зажигалкой глазок? Что будешь делать теперь?[BGNDIMAGE black.jpg]
+																	Спрошу: "Кто там?"
+																		[mark_08y44eb2e07j250j7713]Голос из-за двери: "Это сантехник. Ваша квартира затопила нижнюю. Открывайте быстрее!"[BGNDIMAGE black.jpg]
+																			Открою дверь.
+																				[mark_5m154021dlk9jhm5a9th]Вместо сантехника перед тобой предстали работники военкомата.[BGNDIMAGE open_the_door.jpg]
+																					>>>
+																						[given_a_notification]Тебе вручили повестку, заставляют расписаться.[BGNDIMAGE open_the_door.jpg]
+																							Распишусь в повестке, а что делать...
+																								[mark_i7gzf16151m8ugfgzqs0]Сотрудники военкомата ушли довольными. Через три дня тебе приказано явиться в военкомат.[BGNDIMAGE open_the_door.jpg]
+																									>>>
+																										[Episode2]Настал день явки в военкомат. Что будешь делать?[BGNDIMAGE window.jpg]
+																											Не собираюсь никуда идти.
+																												[mark_7vfc6wbny4uf19z4cwmu][GOTO Mark_Final104]
+																											Придется пойти в военкомат.
+																												[mark_j0kv5v3bfv5wn1noxy94][GOTO in_the_yard1,in_the_yard2,in_the_yard3,in_the_yard4,in_the_yard5]
+																													>>>
+																														[in_the_yard1]Во дворе сидят знакомые пацаны, пьют пиво. Присоединишься?[BGNDIMAGE boys_drink_beer.jpg]
+																															Пожалуй выпью немножко, расскажу про повестку.
+																																[mark_72ow74i548dvczl759yy]Пацаны сказали, что в военкомате полковник зверствует, гребет всех без разбору.[BGNDIMAGE boys_drink_beer.jpg]
+																																	Вернусь домой.
+																																		[mark_fs2o178022uv057o358i][GOTO Mark_Final104]
+																																	Выпью еще пива.
+																																		[mark_br1918214v8246q151c3]Пацаны говорят, что есть проверенные способы откосить...[BGNDIMAGE boys_drink_beer.jpg]
+																																			Какие?
+																																				[mark_1rjg820s3r5y90ohdpw8][GOTO slope_method1,slope_method2,slope_method3,slope_method4,slope_method5,slope_method6,slope_method7,slope_method8]
+																																					>>>
+																																						[slope_method1]Один нацик набил себе пол тела татуировок и его приравняли к дебилу. А дебилов по закону в армию не берут.[COMMENT Показать фотку нацика с тату][BGNDIMAGE nazi.jpg]
+																																							[GOTO go_to_commissariat]
+																																							[GOTO drink_3rd_beer]
+																																						[slope_method2]Один чудик отрезал себе указательный палец. В армию его не взяли - стрелять не может.[BGNDIMAGE cut_finger.jpg]
+																																							[GOTO drink_3rd_beer]
+																																							[GOTO go_to_commissariat]
+																																						[slope_method3]Один чувак закосил под гея. Правда так вошел в роль, что так геем и остался. Борисом звали.[BGNDIMAGE Moiseev_Boris.jpg]
+																																							[GOTO drink_3rd_beer]
+																																							[GOTO go_to_commissariat]
+																																						[slope_method4]Сын полковника наркоман, можно как-то попытаться развить эту тему для получения отмазки...[BGNDIMAGE boys_drink_beer.jpg]
+																																							[GOTO drink_3rd_beer]
+																																							[GOTO go_to_commissariat]
+																																						[slope_method5]Один парень прямо в военкомате наложил себе в штаны. Полковник сказал: "Засранцев нам в армии не надо!" и его сразу же комиссовали.[BGNDIMAGE made_shit_boy.jpg]
+																																							[GOTO drink_3rd_beer]
+																																							[GOTO go_to_commissariat]
+																																						[slope_method6]Один парнишка получил повестку на 8 апреля к 9:00. Пришел, а военкомат закрыт.[BGNDIMAGE gates2.jpg]
+																																							>>>
+																																								[mark_46y64frdvmeuj37r407z]Он подождал, затем вышел бухой майор и сказал, чтобы он больше туда не приходил. Оказалось, 8 апреля - день работников военкомата. Повесток и правда больше не было. Повезло?![BGNDIMAGE drunken_major2.jpg]
+																																									[GOTO go_to_commissariat]
+																																									[GOTO drink_3rd_beer]
+																																						[slope_method7]Одному парню пришла повестка в военкомат "Прибыть 2 января...". Он собрал манатки, пришел пораньше.[BGNDIMAGE boys_drink_beer.jpg]
+																																							>>>
+																																								[mark_5ql8l04buo4w99nw0h5a]Сидит опухший от Нового года майор (оказалось, председатель призывной комиссии) Увидел его, слегка ожил - принеси, говорит, что-нибудь опохмелиться и покурить.[BGNDIMAGE drunken_major.jpg]
+																																									>>>
+																																										[mark_kq4os7ii14c49i09b728]Парень сбегал в магазин, принес ему бутылку "Жигулевского" и "Приму". Майор говорит, мол, век не забуду...[BGNDIMAGE drunken_major_beer.jpg]
+																																											>>>
+																																												[mark_dh3njs00599s915l44p5]... и перекладывает его личное дело в ящик с надписью "Энурез".[BGNDIMAGE private_matter_conscript.jpg]
+																																													[drink_3rd_beer]Выпью еще бутылочку пива.
+																																														[mark_8m71wb80nxrh5m4i7w2m]Потом ты выпил еще бутылочку, затем еще и конкретно набухался...[BGNDIMAGE swollen.jpg]
+																																															>>>
+																																																[mark_2o5i350ha4l1j3ns62ym][GOTO Mark_Final104]
+																																													[go_to_commissariat]Пойду в военкомат.
+																																														[gates_second_try]Ты стоишь перед воротами военкомата. Может вернуться домой, пока не поздно?[BGNDIMAGE gates.jpg,gates2.jpg]
+																																															[entering_the_gates]Зайду в ворота.[AMBIENT inside]
+																																																[Episode3][GOTO major_phrases1,major_phrases2,major_phrases3]
+																																																	>>>
+																																																		[major_phrases1]Майор: "Ну, что, товарищ уклонист, прибыли?"[BGNDIMAGE at_the_commissariat_door.jpg]
+																																																			[let_me_go]Отпустите меня, товарищ майор!
+																																																				[mark_xc6n6251a71u7s32t72g]Сынок, я тебя отпущу, когда ты мне лично Германию второй раз завоюешь.[BGNDIMAGE at_the_commissariat_door.jpg]
+																																																					>>>
+																																																						[mark_0w8994o7gphtl3hu199y][GOTO come_inside,vodka]
+																																																							>>>
+																																																								[vodka]Ух что-то у меня голова трещит... проклятые магнитные бури! Ладно, вот что, сходи купи мне что-нибудь на  опохмел, а я тебя от призыва освобожу...[BGNDIMAGE at_the_commissariat_door.jpg]
+																																																									А вы не шутите?
+																																																										[mark_60xv82p0592s51i1f51h][GOTO colonel_feels_better,colonel_feels_bad]
+																																																											>>>
+																																																												[colonel_feels_better]Отставить похмелиться! Мне полегчало, марш в казарму![BGNDIMAGE at_the_commissariat_door.jpg]
+																																																													Погодите, погодите я сейчас сбегаю!
+																																																														[mark_41i5tbbq1901ck0quj85]Заходи внутрь, это приказ![BGNDIMAGE at_the_commissariat_door.jpg]
+																																																															Эх, сорвалось...
+																																																																[mark_546368216404707x5op7][GOTO Episode4]
+																																																												[colonel_feels_bad]Я дважды команду не повторяю![BGNDIMAGE at_the_commissariat_door.jpg]
+																																																													[ok_i_am_hurry]Хорошо! Я мигом!
+																																																														[mark_91o1i03owhwal92at067][GOTO Mark_Final7,Mark_Final206]
+																																																															>>>
+																																																																[Mark_Final7][FINAL Майор сдержал свое слово. Твое "Личное дело" все эти годы подпирало ножку шкафа. Положительный, но не главный финал.][BGNDIMAGE private_matter_conscript.jpg]
+																																																																[Mark_Final206][FINAL Майор сдержал свое слово, но слукавил. Он освободил тебя, но только от этого призыва. На следующий призыв опять пришла повестка. Нейтральный финал. Начни игру заново.][BGNDIMAGE notification.jpg]
+																																																									[GOTO ok_i_am_hurry]
+																																																									Да это явно какая-то подстава!
+																																																										[mark_4oau38308sw2cp4y317f][GOTO colonel_feels_better,colonel_feels_bad]
+																																																			[bad_day]Сегодня день дурацкий, и погода портится!
+																																																				[mark_7rrt52fy673s611922k4][GOTO tunic_dressed,sun_blows]
+																																																					>>>
+																																																						[tunic_dressed]Я китель одел, значит будет холодно.[BGNDIMAGE at_the_commissariat_door.jpg]
+																																																							>>>
+																																																								[mark_al9kln9464mkj3n31564][GOTO come_inside,vodka]
+																																																									>>>
+																																																										[come_inside]Заходи внутрь.[BGNDIMAGE at_the_commissariat_door.jpg]
+																																																											Попытаюсь уйти.
+																																																												[mark_1n93u0892g1x5c4sa440]Сто-ять! Кругом марш! Что, сынок, вход потерял?[BGNDIMAGE at_the_commissariat_door.jpg]
+																																																													Нет, я как раз иду ко входу в воротах.
+																																																														[mark_65afs4xq912e6y79p0ry]Вход - это отверстие извне во внутрь, именуемое выходом в обратном направлении. Тебе в другую дверь. Заходи! Ать-два![BGNDIMAGE at_the_commissariat_door.jpg]
+																																																															>>>
+																																																																[Episode4][GOTO register_woman1,register_woman2]
+																																																																	>>>
+																																																																		[register_woman1]Давайте паспорт и приписное.[BGNDIMAGE register_woman.jpg]
+																																																																			Тут какое то недоразумение! У меня есть отсрочка!
+																																																																				[mark_va33d18xe2qfftd9g257]Сейчас проверим...[BGNDIMAGE register_woman.jpg]
+																																																																					>>>
+																																																																						[mark_8u70j88k0k53208c831a][GOTO Mark_Final8,has_no_delay]
+																																																																							>>>
+																																																																								[Mark_Final8][FINAL Да, действительно, у вас есть отсрочка, можете идти домой. Неужели повезло? Положительный, но не главный финал.][BGNDIMAGE millitary_id_released.jpg]
+																																																																								[has_no_delay]В вашем "личном деле" нет никаких отсрочек.[BGNDIMAGE register_woman.jpg]
+																																																																									И что теперь?
+																																																																										[passing_medical_exam]Сейчас вы пройдете медицинское освидетельствование. Вот ваш обходной лист, раздевайтесь и идите прямо по коридору.[BGNDIMAGE register_woman.jpg]
+																																																																											А у меня для вас небольшой презент - вкусная шоколадка!
+																																																																												[mark_49ov527354610h120pem]Это заранее припасенная тобой шоколадка.[BGNDIMAGE chocolate.jpg]
+																																																																													>>>
+																																																																														[mark_2qm04d7ncrm3p7ixx51a]Боже, как мне надоели ваши мелочные подарки... хоть бы раз кто шубу подарил! Ступайте, проходите медкомиссиию![BGNDIMAGE chocolates.jpg,presents.jpg]
+																																																																															[GOTO go_to_medical_comission]
+																																																																											[GOTO go_to_medical_comission]
+																																																																									Но тут какая-то ошибка!
+																																																																										[mark_p8gj8u71slbj8iy8214m]Вы можете уточнить это у полковника, но учтите, без подписей врачей в обходном листе он никого не принимает.[BGNDIMAGE register_woman.jpg]
+																																																																											[GOTO go_to_medical_comission]
+																																																																			Вот, держите.
+																																																																				[mark_gk347h4twqu1j5zh0q23][GOTO passing_medical_exam]
+																																																																			А у меня их нет с собой!
+																																																																				[mark_l0b545491i681030e269]Ничего страшного, это простая формальность, я знаю всех призывников наизусть.[BGNDIMAGE register_woman.jpg]
+																																																																					>>>
+																																																																						[mark_344138pz4o28tlc603y9][GOTO passing_medical_exam]
+																																																																		[register_woman2]Сейчас вы пройдете медицинское освидетельствование. Вот ваш обходной лист, раздевайтесь и идите прямо по коридору.[BGNDIMAGE register_woman2.jpg]
+																																																																			Тут какое то недоразумение! У меня есть отсрочка!
+																																																																				[mark_jg2zv33envt1jjbnb41x]Я смотрела ваше личное дело, вы подлежите призыву. Ступайте, проходите медкомиссию.[BGNDIMAGE register_woman2.jpg]
+																																																																					[what_are_you_doing_evening]Девушка, а что вы делаете сегодня вечером?
+																																																																						[mark_2ix62req82m38ng3pksc][GOTO regwoman_case1,regwoman_case2,regwoman_case3]
+																																																																							>>>
+																																																																								[regwoman_case1]Собираюсь пойти в кино.[BGNDIMAGE register_woman2.jpg]
+																																																																									Может я составлю вам компанию?
+																																																																										[mark_4dcri9vc4175vdm29fq6]Хорошо, только с условием, что купите НАМ ВСЕМ билеты и поедем на такси.[BGNDIMAGE register_woman2.jpg]
+																																																																											Нам всем? Это кому НАМ ВСЕМ?
+																																																																												[mark_k9ljlfe6xj6i2806uai0]Мне, троим моим детишкам, ну и себе.[BGNDIMAGE register_woman2.jpg]
+																																																																													Эээ...ну... ладно...
+																																																																														[mark_q1198jn3b70fhjka5l68]Еще я забыла сказать, что дети любят попкорн с кока-колой.[BGNDIMAGE register_woman2.jpg]
+																																																																															[i_have_a_busines_evening]Эээ... я тут вспомнил, у меня вечером дела!
+																																																																																[mark_p7a6zqk6p6g5apx1fqwt]Ну что ж, бывает...[BGNDIMAGE register_woman2.jpg]
+																																																																																	[go_to_medical_comission]Пойду на медкомиссию.
+																																																																																		[mark_xcgxn72vo842sjp13q0m][GOTO fainted_guy,Episode5]
+																																																																																			>>>
+																																																																																				[fainted_guy]Майор: "Ну орел! Долго продержался, нам бы таких бойцов в разведку!"[BGNDIMAGE guy_fainted.jpg]
+																																																																																					А что с ним?
+																																																																																						[mark_wc531g1k084625i6j405]Тебя это не касается! Будешь косить от армии, с тобой случится то же самое.[BGNDIMAGE guy_fainted.jpg]
+																																																																																							Пойду дальше.
+																																																																																								[Episode5]Терапевт: Кто следующий? Подходим![BGNDIMAGE therapist.jpg]
+																																																																																									Если очереди нет, то могу зайти я.
+																																																																																										[mark_gy83l150dbdgxzn19x04]По тебе итак видно, что здоров, сразу пишу: "Годен"![BGNDIMAGE therapist.jpg]
+																																																																																											Вспомню плакат.
+																																																																																												[mark_wb7i9kq62g20rw2vll4u]"Годен!"[BGNDIMAGE antipriziv.ru.1.jpg]
+																																																																																													[wait_wait]Подождите, подождите...
+																																																																																														[mark_3nf1id5c56f12t1pi3r4]Давай проходи! Не задерживай очередь! Следующий![BGNDIMAGE therapist.jpg]
+																																																																																															Пойду в сортир.
+																																																																																																[mark_9b45av1736v247y89qn5]Ты зашел в сортир, он располагается на первом этаже...[BGNDIMAGE taulet.jpg]
+																																																																																																	>>>
+																																																																																																		[mark_gwj50mlht3i5ibjo72ng]Окна выходят во двор. В принципе можно попытаться свалить из военкомата через окно.[BGNDIMAGE taulet2.jpg]
+																																																																																																			Попробую вылезть в окно.
+																																																																																																				[mark_3rq4v7hdx72c71n05e7n][GOTO you_couldnt_escape,you_could_escape]
+																																																																																																					>>>
+																																																																																																						[you_couldnt_escape]К сожалению, в туалет зашел майор и догадался, что ты намеревался сделать. Ты отмазался, сказав, что просто разглядывал воробья в окне.[BGNDIMAGE taulet2.jpg]
+																																																																																																							[piss]Справлю нужду и продолжу прохождение медкомиссии.
+																																																																																																								[Episode6][GOTO optometrist_case1,optometrist_case2,go_to_surgeon]
+																																																																																																									>>>
+																																																																																																										[go_to_surgeon]Хирург: "Годен! Следующий! Заходи..."[BGNDIMAGE surgeon.jpg]
+																																																																																																											[GOTO coming_to_surgeon]
+																																																																																																											Пойду к окулисту.
+																																																																																																												[mark_wo6z6s27tvny63053z4a]Успеешь ты к окулисту, пройди сначала хирурга![BGNDIMAGE surgeon1.jpg]
+																																																																																																													[coming_to_surgeon]Зайду к хирургу.
+																																																																																																														[mark_5cc593yjz94sqi9w46k1]Снимайте трусы.[BGNDIMAGE surgeon1.jpg]
+																																																																																																															Приспущу трусы.
+																																																																																																																[mark_xq55tc52euv73m4xwoef]Повернитесь ко мне спиной.[BGNDIMAGE surgeon1.jpg]
+																																																																																																																	Повернусь спиной.
+																																																																																																																		[mark_1fx5g386izl9m8dy42s1]Раздвиньте ягодицы и нагнитесь.[BGNDIMAGE surgeon1.jpg]
+																																																																																																																			[i_dont_do_it]Не буду!
+																																																																																																																				[surgeon_said_ready]Годен! Следующий.[BGNDIMAGE surgeon1.jpg]
+																																																																																																																					Пойду к окулисту.
+																																																																																																																						[mark_nbe0iz1691y7yozve6e0][GOTO optometrist_case1,optometrist_case2]
+																																																																																																																							>>>
+																																																																																																																								[optometrist_case1]У окулиста. "Итак, молодой человек, проверим ваше зрение. Так, так.... Надо же! Этого не может быть!"[BGNDIMAGE optometrist.jpg]
+																																																																																																																									Что случилось, доктор?
+																																																																																																																										[mark_j725a93m8t439ul5mwc2]Если бы вы родились индейцем, ваc пренепременно назвали "Соколинный глаз".[BGNDIMAGE optometrist.jpg]
+																																																																																																																											Ну не такой уж и соколинный...
+																																																																																																																												[good_vision]Ваше отличное зрение очень пригодится нашей доблестной армии. Следующий![BGNDIMAGE optometrist.jpg]
+																																																																																																																													[GOTO go_to_ent]
+																																																																																																																											Да у меня всю жизнь -3 было!
+																																																																																																																												[mark_wr24lxt8b19ask86261q]Минус три на гражданке, это почти стопроцентное зрение для армии. В любом случае годен. Следующий![BGNDIMAGE optometrist.jpg]
+																																																																																																																													[GOTO go_to_ent]
+																																																																																																																													[GOTO wait_i_have_bad_vision]
+																																																																																																																											Вобще то у меня -6, доктор...
+																																																																																																																												[mark_c4c2h2w417nr3al7c3nv]Видимо вам каким-то чудесным образом удалось прозреть, с чем вас и поздравляю.[BGNDIMAGE optometrist.jpg]
+																																																																																																																													[GOTO go_to_ent]
+																																																																																																																													[GOTO wait_i_have_bad_vision]
+																																																																																																																											У меня -7 всегда было.
+																																																																																																																												[mark_w5o6v77i1x0d86815c8y]Ну что вы, не скромничайте. У вас отличное зрение.[BGNDIMAGE optometrist.jpg]
+																																																																																																																													Постойте, врач из нашей поликлиники подтвердит!
+																																																																																																																														[mark_9m9wr2z6o2uot253454r]Я не доверяю тыловым крысам, я доверяю своему табельному оружию и своему окуляру. Годен! Выходим из кабинета![BGNDIMAGE optometrist.jpg]
+																																																																																																																															[GOTO go_to_ent]
+																																																																																																																													[GOTO go_to_ent]
+																																																																																																																													[GOTO wait_i_have_bad_vision]
+																																																																																																																								[optometrist_case2]У окулиста. "Жалобы на зрение есть?"[BGNDIMAGE optometrist.jpg]
+																																																																																																																									Есть.
+																																																																																																																										[mark_x9py7z58ez0p6bcgdup2]Хорошо. Сейчас проверим. Вы, юноша, кстати, прибыли в военкомат один или с кем-то?[BGNDIMAGE optometrist.jpg]
+																																																																																																																											Один.
+																																																																																																																												[mark_7h3w1i7x6ftfe37jza1n]Ну вот видите, пришли сами, значит и с боевыми задачами справитесь. Годен![BGNDIMAGE optometrist.jpg]
+																																																																																																																													Погодите, как же так?
+																																																																																																																														[mark_50mgm89jj1iv8i398w21]Мне повторить? Годен! Выходим из кабинета! Следующий![BGNDIMAGE optometrist.jpg]
+																																																																																																																															[wait_i_have_bad_vision]Постойте, у меня плохое зрение!
+																																																																																																																																[mark_40xqp7rv7w5jrmjyrk70]У вас плохой слух. Я сказал: "Годен!".[BGNDIMAGE optometrist.jpg]
+																																																																																																																																	[GOTO go_to_ent]
+																																																																																																																													[GOTO go_to_ent]
+																																																																																																																											Меня сюда привезли.
+																																																																																																																												[mark_2h4c159epik34u2x10s0]Ай-я-яй... как плохо... родственники помогли?[BGNDIMAGE optometrist.jpg]
+																																																																																																																													Да
+																																																																																																																														[mark_ntm8mwda85yl8f58kgud]Плохо, очень плохо... совсем ничего не видите?[BGNDIMAGE optometrist.jpg]
+																																																																																																																															Вижу, но смутно...
+																																																																																																																																[mark_t37933gf2r4e214via49]"Хорошо, давайте поступим так, юноша, я кидаю монетку, если выпадет орел, то я вас отпускаю по непригодности.", - не дожидаясь согласия, хирург подкинул монетку.[BGNDIMAGE optometrist.jpg]
+																																																																																																																																	>>>
+																																																																																																																																		[mark_xi2uri23m06v6x0m099a][GOTO tail,eagle]
+																																																																																																																																			>>>
+																																																																																																																																				[eagle]Выпал орел. Окулист: "Вам не повезло, выпала решка".[BGNDIMAGE eagle.jpg]
+																																																																																																																																					Ну вот, я выиграл!
+																																																																																																																																						[malingerer]А вы, молодой человек, симулянт! Все видите оказывается... Годен![BGNDIMAGE optometrist.jpg]
+																																																																																																																																							[go_to_ent]Пойду к лору.
+																																																																																																																																								[mark_198ht9jhsy3pwcu72e6t][GOTO strange_hand,Episode7]
+																																																																																																																																									>>>
+																																																																																																																																										[strange_hand]В коридоре стоит капитан с забинтованной рукой.[BGNDIMAGE captain_hand.jpg]
+																																																																																																																																											Товарищ капитан, а что у вас с рукой?
+																																																																																																																																												[mark_ozmj0049ua3086bym9m4]Это не ваше дело, товарищ призывник. Впрочем, я отвечу. Подлец призывного возраста укусил. В следующий раз не задумываясь сразу всажу пулю в лоб![BGNDIMAGE captain_hand.jpg]
+																																																																																																																																													Вы его, наверное, куда-нибудь в стройбат определили?
+																																																																																																																																														[mark_o99014r14r98abscu2j6]Нет, он сейчас под следствием. Получит только условный срок, мерзавец...[BGNDIMAGE captain_hand.jpg]
+																																																																																																																																															А в армию его служить не отправили, получается?
+																																																																																																																																																[mark_1h721rlww6198o742cj0]Лицо, находящееся под следствием или имеющее условный срок в армию не призы...[BGNDIMAGE captain_hand.jpg]
+																																																																																																																																																	>>>
+																																																																																																																																																		[captain_said_too_many_questions]Отставить! Много вопросов задаете, товарищ призывник! Займитесь своими делами.[BGNDIMAGE captain_hand.jpg]
+																																																																																																																																																			[go_from_captain_with_hand]Пойду дальше.
+																																																																																																																																																				[Episode7]Это лор. Удивительно, но она, как две капли воды похожа на женщину-терапевта, у которой ты уже был.[BGNDIMAGE ent.jpg]
+																																																																																																																																																					Промолчу.
+																																																																																																																																																						[mark_4w735qutef2vs6y933qb]Спроси её про терапевта! Неужели тебе не интересно, сестра-близнец она ей или нет?[BGNDIMAGE ent.jpg]
+																																																																																																																																																							[are_you_siams]Извините, а врач-терапевт это ваша сестра-близнец?
+																																																																																																																																																								[mark_7314xok502rt5dvm04p1]Не умничай! Это я и есть. Я здесь и терапевт, и лор, и психиатор, и нарколог.[BGNDIMAGE ent.jpg]
+																																																																																																																																																									Но ведь так нельзя!
+																																																																																																																																																										[mark_57y25j6k91n7dy202a9b]Можно. Платят мало, а мне детей кормить надо! Приходится совмещать несколько ставок.[BGNDIMAGE ent.jpg]
+																																																																																																																																																											А у меня, между прочим, заболевание имеется.
+																																																																																																																																																												[mark_p058kcd6qhc4r1pv7804][GOTO dont_drink_and_smoke,you_came_here_yourself]
+																																																																																																																																																													>>>
+																																																																																																																																																														[dont_drink_and_smoke]А ты не пей и не кури, тогда и заболеваний не будет. Армия как раз научит.[BGNDIMAGE ent.jpg]
+																																																																																																																																																															Мой врач из поликлиники подтвердит!
+																																																																																																																																																																[mark_v7242i7z8em03hgi95xi]Ты опоздал, документы из других медицинских учреждений предоставляются призывником до прохождения медкомиссии.[BGNDIMAGE ent.jpg]
+																																																																																																																																																																	Но я не знал этого.
+																																																																																																																																																																		[mark_7361k74t8sjzu02xt8at]Незнание законов не освобождает от ответственности.[BGNDIMAGE ent.jpg]
+																																																																																																																																																																			>>>
+																																																																																																																																																																				[you_are_absolutely_health]Все! Некогда мне тут с тобой лясы точить. Годен! Годен! Годен! Годен! Иди к полковнику.[BGNDIMAGE ent.jpg]
+																																																																																																																																																																					Пойду к полковнику.
+																																																																																																																																																																						[Episode8]В кабинет полковника очередь. Придется подождать...[BGNDIMAGE queue_to_colonel.jpg]
+																																																																																																																																																																							Пройдусь по военкомату.
+																																																																																																																																																																								[mark_op57v6f01qsmaxtt9fc4]Куда пойдем?[BGNDIMAGE queue_to_colonel.jpg]
+																																																																																																																																																																									Загляну на второй этаж.
+																																																																																																																																																																										[mark_qzj22l0b3961vb7ww1f5]Это что такое?! Товарищ майор расскажите это, покажите то, как сделать это, как сделать то! А что вы будете делать когда война-то начнется? Ведь товарища майора там не будет! Не-е-ет![BGNDIMAGE major_teachs.jpg]
+																																																																																																																																																																											>>>
+																																																																																																																																																																												[mark_p6hfjtggv4l6awwuo36e]Чья шинель подписана "Сидоров"?[BGNDIMAGE major_teachs.jpg]
+																																																																																																																																																																													>>>
+																																																																																																																																																																														[mark_z4721qe0pg2f7i6w9qdt]Не хотите жить как люди, будете жить по уставу![BGNDIMAGE major_teachs.jpg]
+																																																																																																																																																																															[back_to_queue_to_colonel]Вернусь в очередь к полковнику.
+																																																																																																																																																																																[mark_664deux1n4e7c2hh4594]Ну вот, наконец то, настала твоя очередь! Заходи в кабинет полковника.[BGNDIMAGE queue_to_colonel.jpg]
+																																																																																																																																																																																	>>>[AMBIENT colonel]
+																																																																																																																																																																																		[Episode6]Р-р-равняйсь! Не слышу щелчка при повороте головы![BGNDIMAGE colonel.jpg]
+																																																																																																																																																																																			>>>
+																																																																																																																																																																																				[mark_illa5jeb1ttrif5f6494]Давай сюда свой обходной лист, посмотрим, где служить будешь. Так-с... здоров![BGNDIMAGE colonel.jpg]
+																																																																																																																																																																																					>>>
+																																																																																																																																																																																						[mark_fs9o1u8763mi65301yf7][GOTO cstrike,wow]
+																																																																																																																																																																																							>>>
+																																																																																																																																																																																								[wow]В семье участники ВОВ есть?[BGNDIMAGE colonel.jpg]
+																																																																																																																																																																																									Никого кроме меня... а и ещё брат немного. Но он на малых левелах пока.
+																																																																																																																																																																																										[mark_7m6qd7ghbtnt7lso839m][GOTO cstrike,spoke_russian]
+																																																																																																																																																																																											>>>
+																																																																																																																																																																																												[cstrike]В какие компьютерные игры играешь? Коунтер Стрике знаешь?[BGNDIMAGE colonel.jpg]
+																																																																																																																																																																																													А что это?
+																																																																																																																																																																																														[mark_1y5gl67owk5wl4n543ka]Ну в "контру" любишь побегать?[BGNDIMAGE colonel.jpg]
+																																																																																																																																																																																															А-а-а, да...
+																																																																																																																																																																																																[whom_did_you_play]А за кого ты там играешь?[BGNDIMAGE colonel.jpg]
+																																																																																																																																																																																																	По рандому.
+																																																																																																																																																																																																		[mark_4ym57ag93x64420bua61]Будешь по-басурмански говорить, отправлю служить на Северный Кавказ.[BGNDIMAGE colonel.jpg]
+																																																																																																																																																																																																			[counter_terrorists]За спецназ.
+																																																																																																																																																																																																				[mark_3i3y45o6x9bj04a69273]Значит ВДВ-шником будешь.[BGNDIMAGE airborn.jpg]
+																																																																																																																																																																																																					>>>
+																																																																																																																																																																																																						[ring_red_phone]Внезапно на столе у полковника зазвонил красный телефон. "Жди меня здесь", - сказал полковник и вышел из кабинета.[BGNDIMAGE red_phone.jpg]
+																																																																																																																																																																																																							>>>
+																																																																																																																																																																																																								[mark_v3cxiogsz2esk57n38yd]Буквально тут же раздался звонок черного телефона. Возьмешь трубку?[BGNDIMAGE black_phone.jpg]
+																																																																																																																																																																																																									Проигнорирую.
+																																																																																																																																																																																																										[mark_5bp42yk920p39w6k94n5]Ну ты и трус! Это же всего лишь игра. Бери, не бойся![BGNDIMAGE black_phone.jpg]
+																																																																																																																																																																																																											[answer_phone]Подниму трубку.
+																																																																																																																																																																																																												[mark_62v32g2457285357x42s]"- Алле.Товарищ полковник, разрешите доложить..."[BGNDIMAGE black_phone.jpg]
+																																																																																																																																																																																																													Его сейчас нет.
+																																																																																																																																																																																																														[mark_9640hc97qq6gra3gg7qy]Извините, товарищ полковник![BGNDIMAGE black_phone.jpg]
+																																																																																																																																																																																																															Положу трубку.
+																																																																																																																																																																																																																[mark_1zjo277yv05hpq1qb7bx]Вернулся полковник, сел на свое место.[BGNDIMAGE colonel.jpg]
+																																																																																																																																																																																																																	[GOTO copy_solution]
+																																																																																																																																																																																																																	[hello_from_Skorohodov]Вам привет от сержанта Скороходова!
+																																																																																																																																																																																																																		[from_what_sergeant]Какого еще сержанта?[BGNDIMAGE colonel.jpg]
+																																																																																																																																																																																																																			А вы что, забыли уже?
+																																																																																																																																																																																																																				[mark_vhm4c8vez5921i2mkljy]Отставить! Не знаю о ком идет речь![BGNDIMAGE colonel.jpg]
+																																																																																																																																																																																																																					Парень, который без ног, сержант Скороходов. Привет передает!
+																																																																																																																																																																																																																						[mark_i22l85yp4vaelp322338]Причем здесь Скороходов?[BGNDIMAGE colonel.jpg]
+																																																																																																																																																																																																																							[GOTO I_do_not_want_to_repeat_his_fate]
+																																																																																																																																																																																																																							Это по вашей милости он лишился ног!
+																																																																																																																																																																																																																								[mark_36lbb91a9u5xv67e850s]ЧТО??????? ДА КАК ТЫ СМЕЕШЬ????? ДА Я ТЕБЯ СЕЙЧАС!!!!!!!!!!![BGNDIMAGE colonel_angry.jpg]
+																																																																																																																																																																																																																									Зато ваш сынок, наркоша гашенный, еще на ногах!
+																																																																																																																																																																																																																										[mark_b53cn1oa7gmk4a6g5ftt]АХ ТЫ ЩЕНОК!!!!! СОШЛЮ НА ЧУКОТКУ ОЛЕНЕВОДОМ!!!!!!!![BGNDIMAGE colonel_angry.jpg]
+																																																																																																																																																																																																																											Дебильно улыбнусь!
+																																																																																																																																																																																																																												[mark_04a3b3qq76h9pop43qyf]А-А-Ааа... сердце! скорую... быстрее...[BGNDIMAGE colonel_heart.jpg]
+																																																																																																																																																																																																																													>>>
+																																																																																																																																																																																																																														[mark_579d6ci847s6gj5u0n8h]Полковника увезли в больницу, где он умер от сердечного приступа.[BGNDIMAGE colonel_in_hospital.jpg]
+																																																																																																																																																																																																																															>>>
+																																																																																																																																																																																																																																[mark_z5lo147el2k74166r4mh]На время, пока шло следствие по делу о смерти, тебя освободили от призыва.[BGNDIMAGE court.jpg]
+																																																																																																																																																																																																																																	>>>
+																																																																																																																																																																																																																																		[Mark_Final6][FINAL В итоге, тебя признали невиновным. Повестки больше не приходили...Положительный, но не главный финал.][BGNDIMAGE waiting_classmate.jpg]
+																																																																																																																																																																																																																											Обосрусь от страха.
+																																																																																																																																																																																																																												[mark_85ev0rgh8m4xk86a93b6]Чем это так пахнет?[BGNDIMAGE colonel.jpg]
+																																																																																																																																																																																																																													>>>
+																																																																																																																																																																																																																														[mark_7c15cx9829jf353rn730]Ты что, в штаны наделал?[BGNDIMAGE colonel.jpg]
+																																																																																																																																																																																																																															Промычу что-то невнятное.
+																																																																																																																																																																																																																																[mark_db73z53043vhe8599z2r]"Майор, зайдите ко мне в кабинет."[BGNDIMAGE black_phone.jpg]
+																																																																																																																																																																																																																																	>>>
+																																																																																																																																																																																																																																		[Mark_Final5][FINAL "Засранцев нам в армии не надо!" - полковник приказал тебя комиссовать. Положительный, но не главный финал с плохой репутацией.][BGNDIMAGE made_shit_boy.jpg]
+																																																																																																																																																																																																																									Извините, не сдержался...
+																																																																																																																																																																																																																										[mark_q6n35g8wvk5incm99wds]Отставить сентименты! Ты же мужчина![BGNDIMAGE colonel.jpg]
+																																																																																																																																																																																																																											[I_do_not_want_to_repeat_his_fate]Я не хочу повторить его судьбу!
+																																																																																																																																																																																																																												[serve_closer_to_home]Хорошо, я позабочусь о том, чтобы ты служил поближе к дому. Договорились?[BGNDIMAGE colonel.jpg]
+																																																																																																																																																																																																																													Договорились!
+																																																																																																																																																																																																																														[mark_rd79d3m6wiiod960fh5h][GOTO Mark_Final103]
+																																																																																																																																																																																																																													Не договорились, я не хочу служить.
+																																																																																																																																																																																																																														[mark_3kqz98k0v39elk86e4t2]Это не обсуждается. Служить - это почетная обязанность каждого гражданина! Защищать нашу Родину...[BGNDIMAGE colonel.jpg]
+																																																																																																																																																																																																																															>>>
+																																																																																																																																																																																																																																[mark_x3d03kx4qn208zrw7t64]...и наш народ от иноземных захватчиков - вот высшая награда любому мужчине! Учить устав и жить по уставу...[BGNDIMAGE colonel.jpg]
+																																																																																																																																																																																																																																	Послушаю дальше.
+																																																																																																																																																																																																																																		[zombi_speech2]...защищать честь мундира, отдать свою жизнь за Россию...[BGNDIMAGE colonel.jpg]
+																																																																																																																																																																																																																																			Буду зомбироваться дальше.
+																																																																																																																																																																																																																																				[mark_jowy0d1605py45xcf9k3]твой почетный долг и обязанность нашей Родине, которая воспитала и кормила тебя...[BGNDIMAGE colonel.jpg]
+																																																																																																																																																																																																																																					Буду слушать дальше.
+																																																																																																																																																																																																																																						[mark_10461nzefno0opi8eq14]Ты потерял сознание, а когда очнулся стал очередным военизированным зомби.[BGNDIMAGE zombi.jpg]
+																																																																																																																																																																																																																																							>>>
+																																																																																																																																																																																																																																								[mark_91mz08d6u5s4436pps13][GOTO Mark_Final103]
+																																																																																																																																																																																																																																					[hit_colonel]Стукну полкана в репу.
+																																																																																																																																																																																																																																						[mark_107cqrysl348a1d96150]Полковника увезли в больницу с подозрением на сотрясение мозга. Тебя доставили в милицию и завели уголовное дело.[BGNDIMAGE colonel_in_hospital.jpg]
+																																																																																																																																																																																																																																							>>>
+																																																																																																																																																																																																																																								[Mark_Final4][FINAL Но вскоре отпустили, присудив условный срок два года. Повестки тебе больше не приходили.Положительный, но не главный финал.][BGNDIMAGE waiting_classmate.jpg]
+																																																																																																																																																																																																																																			[GOTO hit_colonel]
+																																																																																																																																																																																																																																	Могу я получить копию решения комиссии?
+																																																																																																																																																																																																																																		[mark_4rpym9rx54zaq5e01gp9][GOTO zombi_speech2]
+																																																																																																																																																																																																																							[copy_solution]Могу я получить копию решения комиссии?
+																																																																																																																																																																																																																								[mark_9bcv9k452xd8y90238m6]Не положено.[BGNDIMAGE colonel.jpg]
+																																																																																																																																																																																																																									Как это не положено?
+																																																																																																																																																																																																																										[mark_qw51747ou0m99uermjr9]Тут тебе не бордель, чтоб твои желания исполнять![BGNDIMAGE colonel.jpg]
+																																																																																																																																																																																																																											А как же статья 28?
+																																																																																																																																																																																																																												[mark_fr1c0b483akhw4hw94a6]Ты что думаешь - вы все дураки, а я один умный?! Отставить! Наоборот! Копии не выдаем, бумага кончилась.[BGNDIMAGE colonel.jpg]
+																																																																																																																																																																																																																													[i_shall_apply_to_court]Ну тогда я обращуюсь в суд.
+																																																																																																																																																																																																																														[mark_509l07dyrl2kdfaq8g1t]Распишись здесь и обращайся хоть к Папе Римскому![BGNDIMAGE colonel.jpg]
+																																																																																																																																																																																																																															Я не буду ничего подписывать!
+																																																																																																																																																																																																																																[mark_39a33t6sbo4n7n64xo64][GOTO sign_refusing_doc,sign_appearance]
+																																																																																																																																																																																																																																	>>>
+																																																																																																																																																																																																																																		[sign_refusing_doc]Можешь не подписывать, тогда подпиши, что отказываешься подписывать.[BGNDIMAGE colonel.jpg]
+																																																																																																																																																																																																																																			[GOTO sign_colonel_doc]
+																																																																																																																																																																																																																																			Не буду!
+																																																																																																																																																																																																																																				[sign_appearance]Подпиши, что был в военкомате.[BGNDIMAGE colonel.jpg]
+																																																																																																																																																																																																																																					[will_not_sign]Не буду!
+																																																																																																																																																																																																																																						[mark_x58nwqnys8azdgdyr8m2]Ставь подпись, пока я совсем не разозлился![BGNDIMAGE colonel.jpg]
+																																																																																																																																																																																																																																							Я не обязан!
+																																																																																																																																																																																																																																								[mark_yx067wk2q850r5lan265]Ставь подпись говорю, иначе твоя явка в военкомат не засчитается, и ты станешь уклонистом. А это уже уголовное дело![BGNDIMAGE colonel.jpg]
+																																																																																																																																																																																																																																									Нет.
+																																																																																																																																																																																																																																										[mark_33aywu70ks9mwz7rn8li]А ну вали отсюда!!![BGNDIMAGE colonel.jpg]
+																																																																																																																																																																																																																																											Ладно, я подпишу.
+																																																																																																																																																																																																																																												[mark_msd189hzjrp2rt4gz7db]Подписывай.[BGNDIMAGE colonel.jpg]
+																																																																																																																																																																																																																																													[sign_colonel_doc]Подпишу.
+																																																																																																																																																																																																																																														[mark_4x25i4bp84d393uhk177]Полковник подсунул тебе другую бумагу. Ты расписался, что обязуешься явиться с вещами на следующий день для прохождения службы в армии.[BGNDIMAGE colonel.jpg]
+																																																																																																																																																																																																																																															Пойду домой, обдумаю ситуацию.
+																																																																																																																																																																																																																																																[mark_06816c8u04x61b089e46]Если хочешь остаться дома - нужно обращаться в суд немедленно!!![BGNDIMAGE antipriziv.ru.3.jpg]
+																																																																																																																																																																																																																																																	>>>
+																																																																																																																																																																																																																																																		[mark_18c39gdesyo8421su7w6]Ты протормозил, упустил свое драгоценное время...[BGNDIMAGE antipriziv.ru.3.jpg]
+																																																																																																																																																																																																																																																			>>>
+																																																																																																																																																																																																																																																				[mark_d58870de84yht5g63g1v][GOTO Mark_Final103]
+																																																																																																																																																																																																																																															Пойду в суд.
+																																																																																																																																																																																																																																																[Episode9]В тот же день ты подал документы в суд. По какой из причин?[BGNDIMAGE court_building.jpg][AMBIENT court]
+																																																																																																																																																																																																																																																	Неправомерное решение медицинской комиссии.
+																																																																																																																																																																																																																																																		[mark_337c5wojqf6dgxy500p3]В итоге тебя направили на прохождение другой медкомиссии, которая также признала тебя годным. Но ты можешь обжаловать решение в высшей инстанции.[BGNDIMAGE another_medical_board.jpg]
+																																																																																																																																																																																																																																																			>>>
+																																																																																																																																																																																																																																																				[mark_07o1n36p5hyoc7j48af0]Ты готов тянуть эти судебные тяжбы дальше?[BGNDIMAGE in_europe_court.jpg]
+																																																																																																																																																																																																																																																					Да.
+																																																																																																																																																																																																																																																						[mark_04jzwr5304upftpilcwa]Пока судом рассматривались твои заявления, призыву ты не подлежал. Тем не менее военкомат продолжал тянуть к тебе свои загребущие руки, пока тебе не исполнилось 27 лет.[BGNDIMAGE in_europe_court.jpg]
+																																																																																																																																																																																																																																																							>>>
+																																																																																																																																																																																																																																																								[Mark_Final3][FINAL В итоге ты победил, и военкомат навсегда отстал от тебя. Положительный, но не главный финал.][BGNDIMAGE waiting_classmate.jpg]
+																																																																																																																																																																																																																																																					Нет.
+																																																																																																																																																																																																																																																						[Mark_Final103][FINAL Тебя загребли в армию. Отрицательный финал!][BGNDIMAGE you_are_in_the_army.jpg,you_are_in_the_army2.jpg]
+																																																																																																																																																																																																																																																	По поводу отмены прохождения военной службы по личным убеждениям.
+																																																																																																																																																																																																																																																		[mark_z60wzr94u5p725p9qgg8]Убеждения - это то, ради чего человек способен пожертвовать самым дорогим ему в жизни. По каким убеждениям?[BGNDIMAGE court_building.jpg]
+																																																																																																																																																																																																																																																			Труд человека должен оплачиваться достойно.
+																																																																																																																																																																																																																																																				[mark_7zgiy37ytc3w58z548g3]У каждой стороны свои понятия о размере достойной оплаты. К сожалению, наше государство считает существую оплату за службу достойной.[BGNDIMAGE court.jpg]
+																																																																																																																																																																																																																																																					>>>
+																																																																																																																																																																																																																																																						[Mark_Final113][FINAL Суд не удовлетворил твой иск по поводу отмены службы в армии на основании недостойной оплаты труда.][BGNDIMAGE court.jpg]
+																																																																																																																																																																																																																																																			Человек должен заниматься тем, что лучше всего у него получается.
+																																																																																																																																																																																																																																																				[mark_g4mv5wchk2t9s48fg68l]Уточни, что конкретно имеется ввиду?[BGNDIMAGE in_europe_court.jpg]
+																																																																																																																																																																																																																																																					Армия должна быть только на контрактной основе.
+																																																																																																																																																																																																																																																						[Mark_Final114][FINAL Армия итак постепенно переводится на контрактную основу. Суд отказал в удовлетворении твоего иска. Отрицательный финал!][BGNDIMAGE court.jpg]
+																																																																																																																																																																																																																																																					В армию не должны призывать насильно.
+																																																																																																																																																																																																																																																						[mark_yvcl1q75wgdek1wxp9vg]Действительно, статья 37 пункт 1 Конституции РФ гласит: "Труд свободен. Каждый имеет право свободно распоряжаться своими способностями к труду, выбирать род деятельности и профессию."[BGNDIMAGE in_europe_court.jpg]
+																																																																																																																																																																																																																																																							>>>
+																																																																																																																																																																																																																																																								[mark_k5c7p152hibo7z1100og]пункт 2 гласит: "Принудительный труд запрещен."[BGNDIMAGE in_europe_court.jpg]
+																																																																																																																																																																																																																																																									>>>
+																																																																																																																																																																																																																																																										[mark_12w95198fqdla36tjlw4]и пункт 3 гласит, что условия труда должны отвечать требованиям безопасности и оплата за труд не должна быть меньше прожиточного минимума.[BGNDIMAGE in_europe_court.jpg]
+																																																																																																																																																																																																																																																											Что из перечисленного соблюдается в российской армии?
+																																																																																																																																																																																																																																																												[mark_qxqh25b89gudlmvv2h16]Ответчик в суде: Ничего.[BGNDIMAGE colonel_in_court.jpg]
+																																																																																																																																																																																																																																																													>>>
+																																																																																																																																																																																																																																																														[Mark_Final1][FINAL Суд признал твою правоту. Главный положительный финал!][VIDEO Titles][AUDIO silent_30][AMBIENT none]
+																																																																																																																																																																																																																																																			Армия должна обучать военному делу, а не использовать солдат, как дешевую рабочую силу.
+																																																																																																																																																																																																																																																				[mark_oc4uwx94e924xjgu5s2k][FINAL Суд удовлетворил твой иск и постановил начальнику военкомата направить тебя служить по истинно военному профилю - в ВДВ. Нейтральный финал][BGNDIMAGE airborn.jpg]
+																																																																																																																																																																																																																																																	Желание заменить военную службу на альтернативно-гражданскую.
+																																																																																																																																																																																																																																																		[mark_o8cyx5uni63sar6k8978]Руководствуясь законом, суд удовлетворил твой иск и постановил направить тебя на прохождение альтернативной гражданской службы. Кем ты хотел бы быть?[BGNDIMAGE court_building.jpg]
+																																																																																																																																																																																																																																																			Медбратом.
+																																																																																																																																																																																																																																																				[Mark_Final109][FINAL Работая медбратом, ты не смог прожить на нищенскую оплату труда и умер от голода прямо во дворе больницы. Отрицательный финал!][BGNDIMAGE skeleton.jpg]
+																																																																																																																																																																																																																																																			Помошником лесничего.
+																																																																																																																																																																																																																																																				[mark_46n81y7o208dvnks166u]Ты стал работать в заповеднике. Но мизерной оплаты за АГС не хватало даже на хлеб, поэтому, чтобы не умереть с голода, ты убил оленя.[BGNDIMAGE deer.jpg]
+																																																																																																																																																																																																																																																					>>>
+																																																																																																																																																																																																																																																						[Mark_Final110][FINAL Тебя посадили за браконьерство. Отрицательный финал!][BGNDIMAGE cons.jpg]
+																																																																																																																																																																																																																																																			Никем.
+																																																																																																																																																																																																																																																				[Mark_Final111][FINAL За неисполнение обязанностей по АГС тебя привлекли к уголовной ответственности и посадили на зону, где тебя опустили зэки. Отрицательный финал!][BGNDIMAGE cons.jpg]
+																																																																																																																																																																																																																																																			Помошником настоятеля при церкви.
+																																																																																																																																																																																																																																																				[Mark_Final207][FINAL Пожалуй, единственное нормальное место для прохождения АГС. При условии, что тебе это близко по духу. Нейтральный финал.][BGNDIMAGE church.jpg]
+																																																																																																																																																																																																																																																	На неправомерные действия полковника.
+																																																																																																																																																																																																																																																		[Mark_Final112][FINAL Суд не признал твое заявление, потому что у тебя не было никаких доказательств вины полковника. Отрицательный финал!][BGNDIMAGE court.jpg]
+																																																																																																																																																																																																																																											Уйду из военкомата.
+																																																																																																																																																																																																																																												[Mark_Final104][FINAL В конечном итоге тебя привлекли к административной ответственности за неявку в военкомат и выписали штраф. Отрицательный финал!][BGNDIMAGE court.jpg]
+																																																																																																																																																																																																																																									[GOTO sign_colonel_doc]
+																																																																																																																																																																																																																																							[GOTO sign_colonel_doc]
+																																																																																																																																																																																																																																					[GOTO sign_colonel_doc]
+																																																																																																																																																																																																																															[GOTO sign_colonel_doc]
+																																																																																																																																																																																																																													Тогда пришлите мне почтой.
+																																																																																																																																																																																																																														[mark_95lp2966ghd096u4402g]А может тебе еще бабу голую заказать? Распишись здесь, ступай домой и жди отправки в армию.[BGNDIMAGE colonel.jpg]
+																																																																																																																																																																																																																															[GOTO sign_colonel_doc]
+																																																																																																																																																																																																																															[GOTO will_not_sign]
+																																																																																																																																																																																																																									А как же права призывника?
+																																																																																																																																																																																																																										[mark_1e85038s0xr6k46das60]У призывника нет никаких прав. Сынок, у тебя еще даже погоны не выросли.[BGNDIMAGE colonel.jpg]
+																																																																																																																																																																																																																											[GOTO i_shall_apply_to_court]
+																																																																																																																																																																																																																											Промолчу.
+																																																																																																																																																																																																																												[mark_303n4j4rlib81dqhxm9n][GOTO serve_closer_to_home]
+																																																																																																																																																																																																																					[GOTO copy_solution]
+																																																																																																																																																																																																																			[GOTO copy_solution]
+																																																																																																																																																																																																																	[my_parents_are_ill]Товарищ полковник, у меня родители больные...
+																																																																																																																																																																																																																		[mark_6zh4ijnkn1jr7ta8jnx7][GOTO serve_closer_to_home]
+																																																																																																																																																																																																											Не буду поднимать трубку.
+																																																																																																																																																																																																												[mark_7v86518495jv1qetn277]Если ты такой боязливый, то тебя точно загребут в армию.[BGNDIMAGE black_phone.jpg]
+																																																																																																																																																																																																													>>>
+																																																																																																																																																																																																														[mark_154l5x8x99dkj640u641][GOTO Mark_Final103]
+																																																																																																																																																																																																									[GOTO answer_phone]
+																																																																																																																																																																																																						[ring_black_phone]Внезапно у полковника зазвонил черный телефон.[BGNDIMAGE black_phone.jpg]
+																																																																																																																																																																																																							>>>
+																																																																																																																																																																																																								[mark_l29sf9ghc42vl5wus49x]Полковник поднял трубку. Из трубки было слышно, что кто-то на что-то жалуется...[BGNDIMAGE black_phone.jpg]
+																																																																																																																																																																																																									>>>
+																																																																																																																																																																																																										[mark_zwe65i0r6kp0m5wkrb81][GOTO colonel_phone_phrases1,colonel_phone_phrases2,colonel_phone_phrases3,colonel_phone_phrases4,colonel_phone_phrases5]
+																																																																																																																																																																																																											>>>
+																																																																																																																																																																																																												[colonel_phone_phrases1]Полковник: "Если у вас вместо головы - задница, информацию надо в записных книжках иметь! Вот как у меня!"[BGNDIMAGE black_phone.jpg]
+																																																																																																																																																																																																													>>>
+																																																																																																																																																																																																														[colonel_hung_up]Полковник положил трубку телефона.[BGNDIMAGE colonel.jpg]
+																																																																																																																																																																																																															[GOTO copy_solution]
+																																																																																																																																																																																																															[GOTO hello_from_Skorohodov]
+																																																																																																																																																																																																															[GOTO my_parents_are_ill]
+																																																																																																																																																																																																												[colonel_phone_phrases2]Полковник: "Я решаю только вечные вопросы. Временные решает сержант."[BGNDIMAGE black_phone.jpg]
+																																																																																																																																																																																																													>>>
+																																																																																																																																																																																																														[mark_44ji3093t452i6j5qmvp][GOTO colonel_hung_up]
+																																																																																																																																																																																																												[colonel_phone_phrases3]Полковник: "Для солдата субботник - это дело добровольное, а не так, что хочешь - участвуешь, а хочешь - нет."[BGNDIMAGE black_phone.jpg]
+																																																																																																																																																																																																													>>>
+																																																																																																																																																																																																														[mark_1ko76vpmn62t0fo4acfz][GOTO colonel_hung_up]
+																																																																																																																																																																																																												[colonel_phone_phrases4]Полковник: "Когда сделаете в жизни столько бесполезного, сколько я, тогда и будете меня критиковать!"[BGNDIMAGE black_phone.jpg]
+																																																																																																																																																																																																													>>>
+																																																																																																																																																																																																														[mark_22i42a2o4bnz58ai75u6][GOTO colonel_hung_up]
+																																																																																																																																																																																																												[colonel_phone_phrases5]Полковник: "Не надо мыть полы ежедневно, но хотя бы каждый день надо!"[BGNDIMAGE black_phone.jpg]
+																																																																																																																																																																																																													>>>
+																																																																																																																																																																																																														[mark_c4248t5m70382695186l][GOTO colonel_hung_up]
+																																																																																																																																																																																																			[terrorists]За террористов.
+																																																																																																																																																																																																				[mark_z3a32d9zwi3z9ov18i2a][GOTO ring_red_phone,ring_black_phone]
+																																																																																																																																																																																																			[Skorohodov]Как сержанта Скороходова?
+																																																																																																																																																																																																				[mark_2ln1tlmr6g6a3qihe132][GOTO from_what_sergeant]
+																																																																																																																																																																																																	[GOTO counter_terrorists]
+																																																																																																																																																																																																	[GOTO terrorists]
+																																																																																																																																																																																															Нет, не знаю такую.
+																																																																																																																																																																																																[mark_e34s9f1ymoa9hf8rg722][GOTO ring_red_phone,ring_black_phone]
+																																																																																																																																																																																													Да.
+																																																																																																																																																																																														[mark_87qoc7w8esttg75k0y60][GOTO whom_did_you_play]
+																																																																																																																																																																																													Я вообще хочу проходить альтернативную службу!
+																																																																																																																																																																																														[mark_h2220ly2jx8u7xdkyp2g]Сынок, заявление о прохождении службы медсестрой надо было подавать за полгода до призыва.[BGNDIMAGE colonel.jpg]
+																																																																																																																																																																																															>>>
+																																																																																																																																																																																																[mark_51s68chvq50c15sh9l59][GOTO ring_red_phone,ring_black_phone]
+																																																																																																																																																																																													Вообще не играю.
+																																																																																																																																																																																														[mark_zq929r9i8ih888dab159]Вот молодец! Наш человек, пойдешь в ВДВ служить.[BGNDIMAGE airborn.jpg]
+																																																																																																																																																																																															>>>
+																																																																																																																																																																																																[mark_h0jwc63r485eiu7wz22e][GOTO ring_red_phone,ring_black_phone]
+																																																																																																																																																																																										[spoke_russian]Чего? Говори по-русски, а то на Северный Кавказ служить отправлю.[BGNDIMAGE colonel.jpg]
+																																																																																																																																																																																											[WWII_yes]Да
+																																																																																																																																																																																												[mark_9l1nrsd4c961t7rjnemh][GOTO ring_red_phone,ring_black_phone]
+																																																																																																																																																																																											[WWII_no]Нет.
+																																																																																																																																																																																												[mark_q5k57mj980fev6dbener][GOTO cstrike]
+																																																																																																																																																																																											[GOTO Skorohodov]
+																																																																																																																																																																																									[GOTO WWII_yes]
+																																																																																																																																																																																									[GOTO WWII_no]
+																																																																																																																																																																									[GOTO look_to_nearest_hall]
+																																																																																																																																																																									[GOTO go_to_closet]
+																																																																																																																																																																							Схожу в буфет.
+																																																																																																																																																																								[mark_567812my0zn1npnw8cme]Ну ты наивный! В военкоматах нет буфетов![BGNDIMAGE queue_to_colonel.jpg]
+																																																																																																																																																																									[GOTO go_to_closet]
+																																																																																																																																																																									[look_to_nearest_hall]Загляну в соседний коридор.
+																																																																																																																																																																										[mark_8q5s1uwu5p8rd87u7f51]Майор: Отправьте мне на дачу пару призывничков, картошку окучить надо.[BGNDIMAGE major_to_doctor.jpg]
+																																																																																																																																																																											>>>
+																																																																																																																																																																												[mark_4c15m3r3s2wlg00n8eg1]Доктор: не получится, все поедут к товарищу полковнику на дачу, там усадьба не достроена.[BGNDIMAGE major_to_doctor.jpg]
+																																																																																																																																																																													[GOTO back_to_queue_to_colonel]
+																																																																																																																																																																									[wait_in_queue_to_colonel]Буду ждать.
+																																																																																																																																																																										[mark_g3zry25d1u7tu8nf138g]Ты проторчал в очереди два часа. Может пора сходить справить естественные потребности организма?[BGNDIMAGE queue_to_colonel.jpg]
+																																																																																																																																																																											[go_to_closet]Пойду в сортир.
+																																																																																																																																																																												[mark_3w588i7m2ei7bq8e2v20]Ты зашел в сортир.[BGNDIMAGE taulet.jpg]
+																																																																																																																																																																													>>>
+																																																																																																																																																																														[windows_are_closed]Окна, выходящие во двор, прочно заколочены гвоздями, свалить из военкомата не удастся.[BGNDIMAGE taulet2.jpg]
+																																																																																																																																																																															[GOTO back_to_queue_to_colonel]
+																																																																																																																																																																											Нет.
+																																																																																																																																																																												[mark_122w5u7wk5lg107xmzzu]Ты обмочился в труселя и тебе все равно пришлось тащиться в сортир под дикое ржание призывников и сотрудников военкомата.[BGNDIMAGE queue_to_colonel.jpg]
+																																																																																																																																																																													<пойти в сортир смыть позор>
+																																																																																																																																																																														[mark_755sahsy5y2bta6t1thq][GOTO windows_are_closed]
+																																																																																																																																																																							[GOTO wait_in_queue_to_colonel]
+																																																																																																																																																																	Как же мне теперь быть?
+																																																																																																																																																																		[mark_j982vff146j80d31j53x][GOTO you_are_absolutely_health]
+																																																																																																																																																															Да я итак не пью и не курю!
+																																																																																																																																																																[mark_pb2a3z595v9v408ihzo5]Тогда за компьютером поменьше сиди![BGNDIMAGE ent.jpg]
+																																																																																																																																																																	>>>
+																																																																																																																																																																		[mark_0ft4c2v55a4k4xewnfxi][GOTO you_are_absolutely_health]
+																																																																																																																																																														[you_came_here_yourself]Сюда сам дошел?[BGNDIMAGE ent.jpg]
+																																																																																																																																																															Ну да...
+																																																																																																																																																																[mark_wh601g4v61xe18d312x5]Значит годен![BGNDIMAGE ent.jpg]
+																																																																																																																																																																	Да послушайте же меня!
+																																																																																																																																																																		[mark_i33vm5g9zyyx377dnoz3][GOTO you_are_absolutely_health]
+																																																																																																																																																											Какое мне дело до ваших детей?
+																																																																																																																																																												[mark_4zn55a987w0e7kjzc18r][GOTO you_are_absolutely_health]
+																																																																																																																																																									А разве так можно?
+																																																																																																																																																										[mark_v6cyr05eo0w81u9143q3][GOTO you_are_absolutely_health]
+																																																																																																																																																					[GOTO are_you_siams]
+																																																																																																																																													Прям просто так взял и укусил?
+																																																																																																																																														[mark_n07r951wd25xk2006exm]Да, просто так... служить на атомной подводной лодке видите ли он боится...[BGNDIMAGE captain_hand.jpg]
+																																																																																																																																															>>>
+																																																																																																																																																[mark_6ay4t2az3scn4z94qg56][GOTO captain_said_too_many_questions]
+																																																																																																																																											[GOTO go_from_captain_with_hand]
+																																																																																																																																					Орел выпал!
+																																																																																																																																						[mark_pr46ht80h4t6m0fik171][GOTO malingerer]
+																																																																																																																																					Промолчу.
+																																																																																																																																						[Mark_Final2][FINAL В итоге тебе удалось закосить по зрению. Положительный, но не главный финал.][BGNDIMAGE millitary_id_released.jpg]
+																																																																																																																																				[tail]Выпала решка. Окулист: "Вам не повезло, выпала решка".[BGNDIMAGE tail.jpg]
+																																																																																																																																					Давайте две из трех попыток.
+																																																																																																																																						[mark_8i436c7231r873p12j5w][GOTO malingerer]
+																																																																																																																																					Эх, не повезло...
+																																																																																																																																						[mark_0p3nwdx3n64e9q9wv1oy][GOTO malingerer]
+																																																																																																																															Ничего не вижу.
+																																																																																																																																[mark_2ja22pm93ss9mg1e925e]Ну что ж... поставлю вам "Не годен!", можете быть свободны.[BGNDIMAGE optometrist.jpg]
+																																																																																																																																	Выйду из кабинета.
+																																																																																																																																		[mark_s2qowff6n9w84z1wsws8][GOTO malingerer]
+																																																																																																																																	Не могу!
+																																																																																																																																		[mark_vna8459ye7yay4ef9aa2]Это еще почему?[BGNDIMAGE optometrist.jpg]
+																																																																																																																																			Доктор, я плохо вижу выход.
+																																																																																																																																				[mark_s8634n0w2zgw4w329864][GOTO Mark_Final2] 
+																																																																																																																													Нет, ваши ребята.
+																																																																																																																														[mark_02bg3103yfn76ew2c777]Так вы, юноша, уклонист! Ой-ё-ёй... Годен![BGNDIMAGE optometrist.jpg]
+																																																																																																																															[GOTO wait_i_have_bad_vision]
+																																																																																																																									Нет.
+																																																																																																																										[mark_1w2g8002m6pkmq1mi5ni][GOTO good_vision]
+																																																																																																																			Сделаю.
+																																																																																																																				[enemy_spy]Врач нажал под столом скрытую кнопку. В комнату тут же забежали двое солдат с автоматами. Следом зашел майор ФСБ.[BGNDIMAGE surgeon1.jpg]
+																																																																																																																					>>>
+																																																																																																																						[mark_71z18604j5rh8ve50nm2]Майор: "Вот так мы и ловим иностранных шпионов!"[BGNDIMAGE major_to_arrest.jpg]
+																																																																																																																							>>>
+																																																																																																																								[Mark_Final106][FINAL Тебя забрали в ФСБ. Настоящий русский человек никогда так не сделает. Отрицательный финал.][BGNDIMAGE FSB.jpg]
+																																																																																																																	Повернусь боком.
+																																																																																																																		[mark_nw1b6z8o5x2v5600zir1][GOTO surgeon_said_ready]
+																																																																																																															Сниму трусы.
+																																																																																																																[mark_42442iq45djs94cq8qt6]Оголить крайнюю плоть 10 раз.[BGNDIMAGE surgeon1.jpg]
+																																																																																																																	Сделаю, как говорит хирург.
+																																																																																																																		[mark_8ay684lazgr79hami2o0][GOTO enemy_spy]
+																																																																																																																	[GOTO i_dont_do_it]
+																																																																																																						[you_could_escape]Тебе удалось вылезть через окно во двор...[BGNDIMAGE taulet2.jpg]
+																																																																																																							>>>
+																																																																																																								[mark_896l8wk7tfyznqr038ib][GOTO colonel_catch_you,you_are_escaped]
+																																																																																																									>>>
+																																																																																																										[colonel_catch_you]Стоять! Куда?[BGNDIMAGE soldiers.jpg]
+																																																																																																											>>>
+																																																																																																												[mark_19dcnjm83k166gl5o5j3]За попытку бегства из военкомата будешь служить на флоте 3 года![BGNDIMAGE at_the_commissariat_door.jpg]
+																																																																																																													>>>
+																																																																																																														[mark_2n7ivzsl81ag8b4cf423][GOTO Mark_Final103]
+																																																																																																										[you_are_escaped]Тебе удалось незаметно свалить из военкомата. Этот призыв прошел без твоего участия.[BGNDIMAGE waiting_classmate.jpg]
+																																																																																																											>>>
+																																																																																																												[Mark_Final205][FINAL В следующий призыв тебе снова пришла повестка. Нейтральный финал. Начни игру заново.][BGNDIMAGE notification.jpg]
+																																																																																																			[GOTO piss]
+																																																																																															Постойте, разве можно на глаз диагноз ставить?
+																																																																																																[mark_xf86dnj2si3h3spmn3qj]Да у меня глаз-алмаз! Ступай к окулисту, он подтвердит. Проходим дальше![BGNDIMAGE therapist.jpg]
+																																																																																																	[go_to_next_doctor]Пойду к следующему врачу.
+																																																																																																		[mark_o1bdw51x288960295601][GOTO optometrist_case1,optometrist_case2,go_to_surgeon]
+																																																																																															[GOTO go_to_next_doctor]
+																																																																																											[GOTO go_to_next_doctor]
+																																																																																									А кто последний?
+																																																																																										[mark_c3gbqdh54l280532e6cb]Здесь нет последних, тут все первые, давай сюда свой лист. Годен! Следующий![BGNDIMAGE therapist.jpg]
+																																																																																											[GOTO go_to_next_doctor]
+																																																																																											А осмотреть меня?
+																																																																																												[mark_b9387825m53cww82538z]Ой, ой, что ты как девица? Что я у вас, здоровых мужиков, не видела то? Это пусть наш окулист тебя осмотривает![BGNDIMAGE therapist.jpg]
+																																																																																													[GOTO go_to_next_doctor]
+																																																																																													[GOTO wait_wait]
+																																																																																					Пройду мимо.
+																																																																																						[mark_7c58x78797m2nm76mlfr][GOTO Episode5]
+																																																																																					Товарищ майор, а что с ним?
+																																																																																						[mark_7n6b24pqb2n39m9y0ayo]Не повезло парню. Так умело притворялся дебилом, что когда получил отсрочку на радостях совсем разум потерял. Везите его теперь в дурку, мамаша...[BGNDIMAGE guy_fainted.jpg]
+																																																																																							>>>
+																																																																																								[mark_spqipm5zh1j8k2g300vi][GOTO Episode5]
+																																																																															Эээ... ну... ладно, куплю попкорн и кока-колу вашим детям.
+																																																																																[mark_f98459vs70ggccdrmd38]Прошу прощения, это была шутка. Я замужем и очень верна своему мужу. Проходите медкомиссию.[BGNDIMAGE register_woman2.jpg]
+																																																																																	[GOTO go_to_medical_comission]
+																																																																													[GOTO i_have_a_busines_evening]
+																																																																											[GOTO i_have_a_busines_evening]
+																																																																								[regwoman_case2]Я не встречаюсь с призывниками, я с ними работаю. Идите, проходите медкомиссию![BGNDIMAGE register_woman2.jpg]
+																																																																									[GOTO go_to_medical_comission]
+																																																																								[regwoman_case3]Работаю с другими призывниками. Идите, проходите медкомиссию![BGNDIMAGE register_woman2.jpg]
+																																																																									[GOTO go_to_medical_comission]
+																																																																					Но тут какая-то ошибка!
+																																																																						[mark_954873xpw5i6mr546dca]Вы можете уточнить это у полковника, но учтите, без подписей врачей в обходном листе он никого не принимает.[BGNDIMAGE register_woman2.jpg]
+																																																																							[GOTO go_to_medical_comission]
+																																																																					[GOTO go_to_medical_comission]
+																																																																			[GOTO what_are_you_doing_evening]
+																																																													Я лучше домой пойду, у меня дел много.
+																																																														[mark_3tn4148qt995623vixp5]Ты что, первый раз на свет родился? Сурка образ жизни ведете, товарищ уклонист. В эту дверь шагом марш![BGNDIMAGE at_the_commissariat_door.jpg]
+																																																															>>>
+																																																																[mark_9j01ke66197c6i910199][GOTO Episode4]
+																																																											Зайду в военкомат.
+																																																												[mark_05654liw92n250g7xf48][GOTO Episode4]
+																																																						[sun_blows]Это верно замечено, погода портится, солнце в глаза уже не дует.[BGNDIMAGE at_the_commissariat_door.jpg]
+																																																							>>>
+																																																								[mark_q41gmds53v6qnb7qzf7o][GOTO come_inside,vodka]
+																																																			Я не уклонист.
+																																																				[mark_7zc0jlkobyl7ses1bwm9]Все, кто в армии не служит - уклонисты.[BGNDIMAGE at_the_commissariat_door.jpg]
+																																																					>>>
+																																																						[mark_q46uh68r0e27a70nd5g7][GOTO come_inside,vodka]
+																																																		[major_phrases2]Майор: "А вот и наш орел приплыл!"[BGNDIMAGE at_the_commissariat_door.jpg]
+																																																			[GOTO let_me_go]
+																																																			[GOTO bad_day]
+																																																			Орлы не плавают.
+																																																				[mark_i7k5h53u840byew9x7wa]Вот определим тебя, орла, на флот служить, лучше дельфинов плавать будешь![BGNDIMAGE at_the_commissariat_door.jpg]
+																																																					>>>
+																																																						[mark_rauhgq2ja8ub2bi5nq02][GOTO come_inside,vodka]
+																																																		[major_phrases3]Майор: "Ну что, сынок, пора долг Родине отдавать..."[BGNDIMAGE at_the_commissariat_door.jpg]
+																																																			[GOTO let_me_go]
+																																																			[GOTO bad_day]
+																																																			А я в долг у нее ничего и не брал!
+																																																				[mark_5958mnhv00901un63zb6]Как это не брал? А бесплатное образование кто тебе дал? Американская фрау Форд?[BGNDIMAGE at_the_commissariat_door.jpg]
+																																																					За образование платили налоги мои родители.
+																																																						[mark_j62g79mj841v99g5s1j3][GOTO come_inside]
+																																																					Бесплатного ничего не бывает!
+																																																						[mark_wro6xt822gv869c4w3k9][GOTO come_inside,vodka]
+																																															Пожалуй так и сделаю
+																																																[mark_83f34atm39qu5s27v35v][GOTO Mark_Final104]
+																																						[slope_method8]Один парнишка написал письмо министру...[BGNDIMAGE letter_to_minister.jpg]
+																																							>>>
+																																								[mark_3hgg9w0xcq8il1953bwk]Получилось, что этот парень сам себе является и сыном, и отцом. А по законy нельзя пpизывать на слyжбy одновpеменно сына, отца и деда.[BGNDIMAGE son_grandfather_father.jpg]
+																																									[GOTO drink_3rd_beer]
+																																									[GOTO go_to_commissariat]
+																																			Нет, пусть все будет, как будет.
+																																				[mark_4eanms9oy4l421iw0pci][GOTO Mark_Final103]
+																																	Пойду посмотрю на полковника.
+																																		[mark_9m7yv5n6kg6f0g52n3tp][GOTO gates_second_try]
+																															Откажусь, пойду в военкомат.
+																																[mark_m9rlr0f65754l7niktdc][GOTO gates_second_try]
+																														[in_the_yard2]Ты вышел во двор. Там какие-то похороны.[BGNDIMAGE coffin_soldier.jpg]
+																															Подойду посмотреть поближе.
+																																[mark_mz50797066c502727n3z]В цинковом гробу лежит парень в военной форме. Говорят, несчастный случай во время боевых учений.[BGNDIMAGE dead_soldier.jpg]
+																																	Пойду своей дорогой.
+																																		[mark_9d7ko4pk8d348y94h0aa]Дорога этого парня тоже проходила через военкомат...[BGNDIMAGE dead_soldier.jpg]
+																																			>>>
+																																				[mark_c85nh636745i08ont972][GOTO gates_second_try]
+																																	Вернусь домой.
+																																		[mark_93ys808a59irkk1rj02s][GOTO Mark_Final104]
+																															Пройду мимо.
+																																[mark_fu6o019j5893a10x2416][GOTO gates_second_try]
+																														[in_the_yard3]В лифте ты встретил одноклассницу. Она зовет тебя на речку купаться.[BGNDIMAGE classmate.jpg]
+																															[GOTO refuse]
+																															Конечно соглашусь!
+																																[Episode10]Она просит подождать ее на улице, пока она сходит переодеть бикини. Подождешь?[BGNDIMAGE classmate.jpg]
+																																	Без проблем!
+																																		[mark_uw7s29w54k7rz886dsav]Ты вышел на улицу. Постоял минут двадцать. Что-то долго её нет... а рядом во дворе знакомые пацаны пьют пиво.[BGNDIMAGE boys_drink_beer.jpg]
+																																			Подожду еще.
+																																				[mark_9coejwv5y6kplrr076e7]Уже час прошел, а её все нет...[BGNDIMAGE waiting_classmate.jpg]
+																																					[drink_with_boys]Выпью немного с пацанами, расскажу, что меня призывают.
+																																						[mark_20gb1f7ab2k9b7a6r7yd]Пацаны посочувствовали тебе, угостили пивом и начали травить байки про военкомат.[BGNDIMAGE boys_drink_beer.jpg]
+																																							>>>
+																																								[mark_e1022gsza57m3346a6w1][GOTO slope_method9,slope_method10,slope_method11]
+																																									>>>
+																																										[slope_method9]Колян: "Знакомая невролог, работала раньше в военкомате, рассказала. Звонишь в скорую и говоришь, мол, подскользнулся, упал, тошнит, голова болит и кружиться..."[BGNDIMAGE kolyan.jpg]
+																																											И что дальше?
+																																												[mark_59u010c8v4dshx9h2vr8]Колян: "Приезжает скорая, просят пальцами дотронуться до носа. Ты на сантиметр промахиваешься. Все! Подозрение на сотрясение! По справке дадут отсрочку на 6 месяцев от призыва".[BGNDIMAGE kolyan.jpg]
+																																													[drink_more_beer]Выпью еще пива пока жду одноклассницу, послушаю другие советы.
+																																														[mark_6e3v8f1m0028t9drzr8f][GOTO classmate_comes,you_overdrunk]
+																																															>>>
+																																																[you_overdrunk]Пока ты ждал одноклассницу, успел хорошо набухаться...[BGNDIMAGE swollen.jpg]
+																																																	>>>
+																																																		[mark_094301cr57s5i2gi056v][GOTO Mark_Final104]
+																																																[classmate_comes]В итоге ты проторчал с пацанами еще пару часов...[BGNDIMAGE boys_drink_beer.jpg]
+																																																	>>>
+																																																		[mark_f901aar7i5nhqfgmig9n]... как вдруг из подъезда появилась одноклассница: "Я готова. Ну что, идем купаться?"[BGNDIMAGE classmate2.jpg]
+																																																			Почему так долго, я уже думал ты не появишься.
+																																																				[mark_6w1w0vut4qj1ms7498y3]Тебе что, было трудно чуть-чуть меня подождать? Если так, то я вообще никуда не пойду.[BGNDIMAGE classmate_offended1.jpg]
+																																																					>>>
+																																																						[mark_365937atjx93i9qbebpa][GOTO classmate_offended1]
+																																																			Знаешь, мне надо в военкомат.
+																																																				[mark_xz82efc13oq83j849dn0]Зачем? Тебя призывают служить в армию?[BGNDIMAGE classmate_offended1.jpg]
+																																																					К сожалению да...
+																																																						[mark_p9br4ia61lp43je2vlzf]Жаль... ну иди![BGNDIMAGE classmate_offended1.jpg]
+																																																							>>>
+																																																								[classmate_offended1]Одноклассница обиделась и ушла домой.[BGNDIMAGE classmate_offended1.jpg]
+																																																									Пойду в военкомат.
+																																																										[mark_24s6c3i972w4rr2q3k3g][GOTO commissariat_closed]
+																																																					Нет, пока еще не призывают.
+																																																						[mark_578md7kh3665e1lujj2e]Тогда пойдем искупаемся, а потом пойдешь в военкомат.[BGNDIMAGE classmate2.jpg]
+																																																							Хорошо, идем...
+																																																								[mark_dh3mnj9gj81wr88ws4z9]Вы идете по тропинке на речку. Вдоль берега есть уединенное местечко, скрытое от людских глаз.[BGNDIMAGE way_to_river.jpg]
+																																																									Великолепно выглядишь!
+																																																										[mark_6nmpoi3ghp2965463760]Знаю, мне это многие говорят...[BGNDIMAGE dyed_hair.jpg]
+																																																											[can_i_ask_about_waiting]Слушай, а можно узнать, почему ты так задержалась?
+																																																												[mark_i6775016yz59172u3f0k]Я покрасила волосы.[BGNDIMAGE dyed_hair.jpg]
+																																																													>>>
+																																																														[mark_2i9mjr0a67fqd9hh7t79]Вы дошли до реки...[BGNDIMAGE way_to_river.jpg]
+																																																															>>>
+																																																																[mark_v913j2wana5uxfj0g6d6][GOTO children_in_river,garbage_in_river,classmate_in_river]
+																																																																	>>>
+																																																																		[children_in_river]А на твоем заветном месте во всю плескаются детишки...[BGNDIMAGE children_in_river.jpg]
+																																																																			>>>
+																																																																				[classmate_offended2]Одноклассница обиделась и ушла домой.[BGNDIMAGE classmate_offended2.jpg]
+																																																																					Пойду в военкомат.
+																																																																						[commissariat_closed]Когда ты добрался до военкомата, он бы уже закрыт.[BGNDIMAGE gates2.jpg]
+																																																																							>>>
+																																																																								[mark_b5sz0esga76jqp8n1onh][GOTO Mark_Final104]
+																																																																					Пойду домой.
+																																																																						[mark_mkg20082vl085442n1lo][GOTO Mark_Final104]
+																																																																		[garbage_in_river]А вместо тихого, уютного места - свалка! Еще год назад этого мусора здесь не было...[BGNDIMAGE garbage_in_river.jpg]
+																																																																			>>>
+																																																																				[mark_3z3pxz0v5at981ly8bw9][GOTO classmate_offended2]
+																																																																		[classmate_in_river]Расположились в тихом, уютном месте. Вокруг абсолютно безлюдно.[BGNDIMAGE river.jpg]
+																																																																			>>>
+																																																																				[mark_to2l1e0x26b40s4q3s5c]Одноклассница сняла с себя платье. Похоже она обманула тебя насчет бикини![BGNDIMAGE classmate1.jpg]
+																																																																					>>>
+																																																																						[mark_8n1ml2y1742kw562nrh5]Одноклассница: "Искупаемся?"[BGNDIMAGE classmate3.jpg]
+																																																																							>>>
+																																																																								[mark_fzl3n4u7e5bk60u731s4]В тот день вы искупались еще два раза. А вечером утомленные, но счастливые вернулись домой.[BGNDIMAGE classmate_evening.jpg]
+																																																																									>>>
+																																																																										[mark_hw8wj31if02fr5605uo4]Перед уходом она оставила тебе записку: "Жду тебя завтра".[BGNDIMAGE classmate_evening.jpg]
+																																																																											>>>
+																																																																												[mark_n4y9s9789j0631dxqdff][GOTO Mark_Final104]
+																																																											Многие? И много их у тебя?
+																																																												[mark_ev3aacdje71jx6o21s5y]Это не твое дело![BGNDIMAGE classmate_offended2.jpg]
+																																																													>>>
+																																																														[mark_762904mm322mq5bj0n4p][GOTO classmate_offended2]
+																																																									[GOTO can_i_ask_about_waiting]
+																																																							Нет, извини, я пошел в военкомат.
+																																																								[mark_56261sn1gdw6r22ou0s6][GOTO commissariat_closed]
+																																																			Давай лучше пива выпьем!
+																																																				[mark_4f100e2yq9kfiyqjjj86][GOTO classmate_offended1]
+																																																			Я уже перехотел купаться.
+																																																				[mark_p26w7had26vw0byaavzt][GOTO classmate_offended1]
+																																													[shall_go_to_commissariat]Пойду в военкомат.
+																																														[mark_091912ndrr6ay31n44rl][GOTO gates_second_try]
+																																										[slope_method10]Толян: "Знакомая из ОВИР рассказала. Короче, подаешь документы на постоянный выезд из страны. При подаче требуют приписное и перечеркивают нафиг!"[BGNDIMAGE tolyan.jpg]
+																																											И что потом?
+																																												[mark_19065w8vn05w8f1rz6gq]Толян: "Уезжать ты можешь и не уезжать, это твое дело, а вот в таком состоянии косить от призыва можно хоть до пенсии! Паспорт остается на руках."[BGNDIMAGE tolyan.jpg]
+																																													[GOTO drink_more_beer]
+																																													[GOTO shall_go_to_commissariat]
+																																										[slope_method11]Вован: "У меня кореш устроился в налоговую, им полагается отсрочка от армии, пока работаешь. Но там число мест для всех халявщиков всего 500 в год..."[BGNDIMAGE vovan.jpg]
+																																											[GOTO drink_more_beer]
+																																											[GOTO shall_go_to_commissariat]
+																																					Подожду ещё.
+																																						[mark_tu374979f4767fzxo95e][GOTO classmate_comes,classmate_doesnot_come]
+																																							>>>
+																																								[classmate_doesnot_come]Ты прождал весь день... как потом выяснилось, у неё возникли какие-то женские проблемы.[BGNDIMAGE waiting_classmate.jpg]
+																																									>>>
+																																										[mark_t3q7o6761i59g3q62928][GOTO Mark_Final104]
+																																			[GOTO drink_with_boys]
+																																	[refuse]Откажусь, пойду в военкомат.
+																																		[mark_9ma03ri7cc6w16013j13][GOTO gates_second_try]
+																														[in_the_yard4]На пути от дома до военкомата ты встретил двух парней. Один из них инвалид, он просит помочь ему деньгами. Поможешь?[BGNDIMAGE persons_with_disabilities.jpg]
+																															Конечно.
+																																[mark_1tf1h94r1fnts8lf69do]Инвалид: "Спасибо. Куда направляешься?"[BGNDIMAGE persons_with_disabilities.jpg]
+																																	По делам.
+																																		[mark_fbk0k2sz2x146r4x17xe]Спасибо за помощь, друг, я за тебя воевал![BGNDIMAGE persons_with_disabilities.jpg]
+																																			Ты воевал не за меня, а за наше правительство.
+																																				[mark_td79yzfa4zqx3aygl413]Я воевал за весь наш народ![BGNDIMAGE persons_with_disabilities.jpg]
+																																					Да, ты прав... (не надо расстраивать инвалида!)
+																																						[mark_8929sa58h9lqf2lpd885][GOTO gates_second_try]
+																																					[nothing_to_say_to_disabled]Пройду молча.
+																																						[mark_w7i62i9z487r84c0q02a][GOTO gates_second_try]
+																																			[GOTO nothing_to_say_to_disabled]
+																																	В военкомат.
+																																		[mark_5b78w32h1mb03s0066be]Желаю тебе не повторить моей судьбы, друг![BGNDIMAGE persons_with_disabilities.jpg]
+																																			Постараюсь...
+																																				[mark_85571n41824p9v7v24f8]Передавай привет полковнику от сержанта Скороходова! Скажи, пусть заходит в гости, гы-гы-гы![BGNDIMAGE persons_with_disabilities.jpg]
+																																					Хорошо, передам.
+																																						[mark_1f82l3shv8493q4j1s50][GOTO gates_second_try]
+																																			[GOTO nothing_to_say_to_disabled]
+																															Пройду мимо.
+																																[mark_b32e72p808lkjonv0q60]Инвалид крикнул тебе в догонку: "Спасибо за помощь, друг! Я за тебя воевал!"[BGNDIMAGE persons_with_disabilities.jpg]
+																																	Я сам за себя воевать буду.
+																																		[mark_ea38w4v80rp6j3035otl]С таким отношением к людям ты пропадешь в нашей армии, друг.[BGNDIMAGE persons_with_disabilities.jpg]
+																																			[GOTO nothing_to_say_to_disabled]
+																																	[GOTO nothing_to_say_to_disabled]
+																														[in_the_yard5]На выходе из вагона метро ты увидел солдата-инвалида. Он тщетно пытался открыть заклинившую дверь. Поможешь?[BGNDIMAGE persons_with_disabilities2.jpg]
+																															Да, конечно.
+																																[mark_o041434z3plgh63iqt34]Тебе не удалось открыть дверь. Скорее всего потому, что она попросту не работает. Поезд поехал дальше.[BGNDIMAGE persons_with_disabilities2.jpg]
+																																	Нажму стоп-кран.
+																																		[Mark_Final105][FINAL Несколько человек пострадало при экстренном торможении. Тебя забрали в милицию. Отрицательный финал!][BGNDIMAGE ambulance.jpg]
+																																	Помогу инвалиду вернуться на нужную станцию.
+																																		[mark_ui3193kiziv3ywwqh6jz][GOTO commissariat_closed]
+																															Другой мужчина собирается помочь ему.
+																																[mark_65s9dggk0ksaf9m1393d]Действительно, мужик в военной форме стал помогать инвалиду. Но дверь вагона им открыть не удалось и поезд поехал дальше.[BGNDIMAGE metro.jpg]
+																																	>>>
+																																		[mark_gh7p73ss88imq2558tbe][GOTO gates_second_try]
+																							Откажусь расписываться.
+																								[mark_t5b368h13w93n4tmxu14]В присутствии двух свидетелей тебе зачитали текст повестки, взяли их подписи и сказали явиться в военкомат через три дня.[BGNDIMAGE open_the_door.jpg]
+																									>>>
+																										[mark_rmn2c3f5vic0t67tkv02][GOTO Episode2]
+																			Не рассказывай мне сказки, сантехник!
+																				[Mark_Final108][FINAL Это был действительно сантехник. Ты затопил квартиру этажом ниже... Отрицательный финал!][BGNDIMAGE flooded_neighbors.jpg]
+																	[GOTO make_illusion_nobody_home]
+													[GOTO make_illusion_nobody_home]
+													[GOTO yes_open_the_door]
+											[GOTO entering_the_gates]
+							Пройду мимо.
+								[mark_8ao73a15j7r01imlf02a][GOTO Episode1]
+						[in_the_yard7]В подъезде ты встретил старика, он громко ругается.[BGNDIMAGE pensioner.jpg]
+							Спрошу, в чем причина?
+								[mark_siw62ihoiv35e682oot4]Пенсионер: "Почему у меня, бывшего полковника СССР пенсия в два раза меньше, чем у соседской пенсионерки, бывшей секретутки из обкома?"[BGNDIMAGE pensioner.jpg]
+									Пойду дальше.
+										[mark_m89e25w33u3y432zq5nm][GOTO Episode1]
+							Пройду мимо.
+								[mark_39b67271cvjj7kyp92sn][GOTO Episode1]
+						[in_the_yard8]Во дворе дома ты встретил знакомого пенсионера, участника ВОВ. Он грустно посмотрел на тебя.[BGNDIMAGE pensioner2.jpg]
+							Спрошу, что у него случилось?
+								[mark_0zosej10p4o4rui14pk9]Пенсионер: "Сходил, заплатил за квартиру, и пенсии не хватило на лекарства. А ведь я воевал за нашу родину, чтобы всем хорошо жилось..."[BGNDIMAGE pensioner2.jpg]
+									Пойду дальше.
+										[mark_3uf4dm83t228jp1y2kzi][GOTO Episode1]
+							Пройду мимо.
+								[mark_03s579mbd5c3t7735sd7][GOTO Episode1]
+			Проигнорирую.
+				[mark_128j2s6m48h4gb54jic5][GOTO next_week_knock_knock]
+			Мне все равно, я живу на съемной хате.
+				[mark_ck531f5sj85l93m4f684][GOTO scare_parents,scare_employer,held_up_girlfriend]
+					>>>
+						[scare_employer]Сотрудники военкомата пригрозили штрафом твоему работодателю, и он сдал тебя.[BGNDIMAGE director.jpg]
+							>>>
+								[mark_nm83pl85411d866emw56][GOTO taken_to_commissariat_next_morning]
+						[held_up_girlfriend]Тебя сдала военкомату брошенная тобою подруга.[BGNDIMAGE bitch.jpg]
+							>>>
+								[mark_dz8b3wy770rht0rctq89][GOTO taken_to_commissariat_next_morning]
+						[scare_parents]Сотрудники военкомата пригрозили уголовной ответственностью твоим родителям, и те, испугавшись, сказали, где тебя можно найти.[BGNDIMAGE parents.jpg]
+							>>>
+								[mark_f95n29531u93rjm7qjn9][GOTO taken_to_commissariat_next_morning]
+			Такого не может быть!
+				[mark_874n4qbdr0s71i8p03qp]Откуда такая уверенность?[BGNDIMAGE notification.jpg]
+					Я не призывного возраста.
+						[Mark_Final201][FINAL Представь, что тебе исполнилось 18 и начни игру заново.][BGNDIMAGE notification.jpg]
+					Я уже служил.
+						[Mark_Final202][FINAL А зачем тогда запустил эту игру? Дай лучше сыну поиграть.][BGNDIMAGE notification.jpg]
+					У меня отсрочка.
+						[mark_p2g3b5tvj66fp96b37qd]Возможно это какая-то ошибка. Лучше сходить выяснить.[BGNDIMAGE notification.jpg]
+							>>>
+								[mark_53c49gprs94yqr055g4u][GOTO Episode1]
+					Я женского пола.
+						[Mark_Final203][FINAL У тебя два варианта: представить себя призывником или дать сыграть своему мужчине.][BGNDIMAGE notification.jpg]
+					Я полковник.
+						[mark_4t1xi7193z0y857659pc]Товарищ полковник, вызывайте техников.[BGNDIMAGE fuck.jpg]
+							<вызвать техников>
+								[self][GOTO self]
+					Я военный.
+						[infinite_loop]Скоротаем вечерок?[BGNDIMAGE evening.jpg]
+							Так точно!
+								[mark_64053x2uu54m9bzo6z86][GOTO infinite_loop]
