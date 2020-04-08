@@ -925,17 +925,18 @@
 						[infinite_loop]Скоротаем вечерок?[IMAGE evening.jpg]
 							Так точно!
 								[mark_64053x2uu54m9bzo6z86][GOTO infinite_loop]
+			[GOTO buy_episodes]
 	[buy_episodes]Эпизоды игры.
 		[mark_7ay0crivt5fo2krptr7j]{this.productId = "com.kri_games.voenkomat.episodes";'';}{script getPayment}
 			
-				[wait2]...[IMAGE notification.jpg]
+				[wait2]...[IMAGE episodes.jpg][AUDIO silent_3]
 					
 						[mark_7u249b2lf7c472494fvi]{script checkPayment2}
 							
-								[payment_success2]...[IMAGE notification.jpg][PURCHASE cheats]
+								[payment_success2]...[IMAGE episodes.jpg][PURCHASE cheats]
 									
-										[mark_lo9fb6iz5619s1v1w24v]Кнопка переключения эпизодов "EPISODE" появилась внизу. Она будет доступна всегда, пока ты не удалишь игру.[BGNDVIDEO 205]
+										[mark_lo9fb6iz5619s1v1w24v]Кнопка переключения эпизодов "EPISODE" появилась внизу. Она будет доступна всегда, пока ты не удалишь игру.[IMAGE episodes.jpg]
 											>>>
 												[mark_790313417a53d817ku7r][GOTO START]
-								[payment_fail2]Что то не так, попробуй еще раз.[IMAGE notification.jpg]
+								[payment_fail2]Что то не так, попробуй еще раз.[IMAGE episodes.jpg]
 									[GOTO buy_episodes]

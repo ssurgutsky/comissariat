@@ -5115,6 +5115,10 @@
                       ],
                       "_mark": "",
                       "_content": "[LABEL Такого не может быть!]"
+                    },
+                    {
+                      "_mark": "",
+                      "_content": "[LABEL ][GOTO buy_episodes]"
                     }
                   ],
                   "_mark": "GAME_SAVEPOINT",
@@ -5156,7 +5160,7 @@
                                                     }
                                                   ],
                                                   "_mark": "mark_lo9fb6iz5619s1v1w24v",
-                                                  "_content": "[LABEL Кнопка переключения эпизодов \"EPISODE\" появилась внизу. Она будет доступна всегда, пока ты не удалишь игру.][BGNDVIDEO 205]"
+                                                  "_content": "[LABEL Кнопка переключения эпизодов \"EPISODE\" появилась внизу. Она будет доступна всегда, пока ты не удалишь игру.][IMAGE episodes.jpg]"
                                                 }
                                               ],
                                               "_mark": "",
@@ -5164,7 +5168,7 @@
                                             }
                                           ],
                                           "_mark": "payment_success2",
-                                          "_content": "[LABEL ...][IMAGE notification.jpg][PURCHASE cheats]"
+                                          "_content": "[LABEL ...][IMAGE episodes.jpg][PURCHASE cheats]"
                                         },
                                         {
                                           "node": [
@@ -5174,7 +5178,7 @@
                                             }
                                           ],
                                           "_mark": "payment_fail2",
-                                          "_content": "[LABEL Что то не так, попробуй еще раз.][IMAGE notification.jpg]"
+                                          "_content": "[LABEL Что то не так, попробуй еще раз.][IMAGE episodes.jpg]"
                                         }
                                       ],
                                       "_mark": "",
@@ -5190,7 +5194,7 @@
                             }
                           ],
                           "_mark": "wait2",
-                          "_content": "[LABEL ...][IMAGE notification.jpg]"
+                          "_content": "[LABEL ...][IMAGE episodes.jpg][AUDIO silent_3]"
                         }
                       ],
                       "_mark": "",
