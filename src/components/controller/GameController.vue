@@ -55,6 +55,7 @@ export default {
 
     loadPurchasedItems () {
       let value = this.gameModel.loadPurchasedItem(this.PURCHASE_ITEM_CHEATS)
+      console.log('this.purchaseItems:', this.PURCHASE_ITEM_CHEATS, value)
       if (value) {
         this.mainView.enablePurchasedCheats()
       }
@@ -75,18 +76,10 @@ export default {
 
       this.mainView.setQuestionText(this.gameModel.getCurrentQuestionLabel())
 
-      this.mode = this.MODE_QUESTION
-      this.playVideoAndAudio()
-
-      this.mainView.clearBgndImages()
-      this.clearAndShowImages()
-
-      this.playAmbient()
-      this.playSoundFx()
-      this.playMusic()
-
       // User purchased some of cheat buttons
+      console.log('GC:purchaseItem:', this.PURCHASE_ITEM_CHEATS, this.gameModel.purchaseItem)
       if (this.gameModel.purchaseItem === this.PURCHASE_ITEM_CHEATS) {
+        console.log('Save:purchaseItem:', this.PURCHASE_ITEM_CHEATS, this.gameModel.purchaseItem)
         this.mainView.enablePurchasedCheats()
         this.gameModel.savePurchasedItem(this.gameModel.purchaseItem)
       }
@@ -98,6 +91,16 @@ export default {
         window.open(this.gameModel.getCurrentNavigateUrl(), '_system')
         // location.replace(this.gameModel.getCurrentNavigateUrl())
       }
+
+      this.mode = this.MODE_QUESTION
+      this.playVideoAndAudio()
+
+      this.mainView.clearBgndImages()
+      this.clearAndShowImages()
+
+      this.playAmbient()
+      this.playSoundFx()
+      this.playMusic()
     },
 
     showAfterQuestion () {

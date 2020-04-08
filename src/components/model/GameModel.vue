@@ -250,6 +250,7 @@ export default {
       this.navigateUrl = commonUtils.getTagValueNAVIGATEURL(this.currentNode._parsedContent)
 
       this.purchaseItem = commonUtils.getTagValuePURCHASE(this.currentNode._parsedContent)
+      console.log('purchaseItem:', this.purchaseItem)
 
       const bgndImagesSequence = commonUtils.getTagValueBGNDIMAGE(this.currentNode._parsedContent)
       this.currentBgndImages = commonUtils.getArrayRandomElement(bgndImagesSequence)
