@@ -59,7 +59,7 @@ export default {
   methods: {
     prepareData () {
       this.createMarksDictionary(scenario)
-      // console.log(this.marksDictionary)
+      console.log(this.marksDictionary)
 
       // console.log('this.$debug', this.$debug)
       if (this.$debug) {

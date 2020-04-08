@@ -2,3 +2,4 @@ ProductId: com.kri_games.voenkomat.coin1
 
 Play Console -> Apps -> an App -> Development Tools -> Services and API
 
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAgLhscGBF74RkpvtC+u+s/k42aI8UTDkBPxY6JUt8Afyuqpt1Zbb3EdJB8nCZVMLQ8onZjq1dJyLtuBvWIlkH4/INtoUglvoSMpCxDPCSPlnvlv7Ig07TnlQr5iWMlp7u6+yrEIrJ56tkxMaX//sIWblMUFrVejklRjJ8ZgzgoK/OOrR1DGl3c8rXGyQAH3XPufGZRszvDWvkpM8j4Thprhthk6XUij67fSX+GXiO3VNUvMgwpP9DgOPtqOH8q1gFkl0+SkPPURnn8RDddroT4Md2ifTPUUIf9aQWW1ibf4fwo4RA/uqn871rvLAl1FzPzNpQEuHfYF5ld7iYzQgQGQIDAQAB
