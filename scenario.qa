@@ -8,7 +8,7 @@
 							Да, дам, немного.
 								[mark_qoskzo3b9r2qfl3uxnm6]Бомж: Спасибо, друг! А то наше правительство давно плюнуло на меня, хотя раньше я воевал за него...[IMAGE dirty_hand.jpg]
 									Пойду дальше.
-										[EPISODE1]Ты стоишь перед воротами военкомата. Может вернуться домой, пока не поздно?[IMAGE gates.jpg,gates2.jpg]
+										[EPISODE1,stand_in_front_of_gates]Ты стоишь перед воротами военкомата. Может вернуться домой, пока не поздно?[IMAGE gates.jpg,gates2.jpg]
 											Пожалуй так и сделаю.
 												[next_week_knock_knock]Через несколько дней в твою дверь постучали. Кроме тебя никого дома нет. Откроешь?[IMAGE antipriziv.ru.2_1.jpg]
 													Посмотрю в дверной глазок.
@@ -54,7 +54,7 @@
 																							Распишусь в повестке, а что делать...
 																								[mark_i7gzf16151m8ugfgzqs0]Сотрудники военкомата ушли довольными. Через три дня тебе приказано явиться в военкомат.[IMAGE open_the_door.jpg]
 																									>>>
-																										[EPISODE2]Настал день явки в военкомат. Что будешь делать?[IMAGE window.jpg]
+																										[mark_6hy023ar7fhtv474jl0d]Настал день явки в военкомат. Что будешь делать?[IMAGE window.jpg]
 																											Не собираюсь никуда идти.
 																												[mark_7vfc6wbny4uf19z4cwmu][GOTO Mark_Final104]
 																											Придется пойти в военкомат.
@@ -66,7 +66,7 @@
 																																	Вернусь домой.
 																																		[mark_fs2o178022uv057o358i][GOTO Mark_Final104]
 																																	Выпью еще пива.
-																																		[mark_br1918214v8246q151c3]Пацаны говорят, что есть проверенные способы откосить...[IMAGE boys_drink_beer.jpg]
+																																		[EPISODE2]Пацаны говорят, что есть проверенные способы откосить...[IMAGE boys_drink_beer.jpg]
 																																			Какие?
 																																				[mark_1rjg820s3r5y90ohdpw8][GOTO slope_method1,slope_method2,slope_method3,slope_method4,slope_method5,slope_method6,slope_method7,slope_method8]
 																																					>>>
@@ -312,7 +312,7 @@
 																																																																																																																																																																															[back_to_queue_to_colonel]Вернусь в очередь к полковнику.
 																																																																																																																																																																																[mark_664deux1n4e7c2hh4594]Ну вот, наконец то, настала твоя очередь! Заходи в кабинет полковника.[IMAGE queue_to_colonel.jpg]
 																																																																																																																																																																																	>>>[AMBIENT colonel]
-																																																																																																																																																																																		[EPISODE6]Р-р-равняйсь! Не слышу щелчка при повороте головы![IMAGE colonel.jpg]
+																																																																																																																																																																																		[EPISODE9]Р-р-равняйсь! Не слышу щелчка при повороте головы![IMAGE colonel.jpg]
 																																																																																																																																																																																			>>>
 																																																																																																																																																																																				[mark_illa5jeb1ttrif5f6494]Давай сюда свой обходной лист, посмотрим, где служить будешь. Так-с... здоров![IMAGE colonel.jpg]
 																																																																																																																																																																																					>>>
@@ -428,7 +428,7 @@
 																																																																																																																																																																																																																																																			>>>
 																																																																																																																																																																																																																																																				[mark_d58870de84yht5g63g1v][GOTO Mark_Final103]
 																																																																																																																																																																																																																																															Пойду в суд.
-																																																																																																																																																																																																																																																[EPISODE9]В тот же день ты подал документы в суд. По какой из причин?[IMAGE court_building.jpg][AMBIENT court]
+																																																																																																																																																																																																																																																[EPISODE10]В тот же день ты подал документы в суд. По какой из причин?[IMAGE court_building.jpg][AMBIENT court]
 																																																																																																																																																																																																																																																	Неправомерное решение медицинской комиссии.
 																																																																																																																																																																																																																																																		[mark_337c5wojqf6dgxy500p3]В итоге тебя направили на прохождение другой медкомиссии, которая также признала тебя годным. Но ты можешь обжаловать решение в высшей инстанции.[IMAGE another_medical_board.jpg]
 																																																																																																																																																																																																																																																			>>>
@@ -729,7 +729,7 @@
 																														[in_the_yard3]В лифте ты встретил одноклассницу. Она зовет тебя на речку купаться.[IMAGE classmate.jpg]
 																															[GOTO refuse]
 																															Конечно соглашусь!
-																																[EPISODE10]Она просит подождать ее на улице, пока она сходит переодеть бикини. Подождешь?[IMAGE classmate.jpg]
+																																[EPISODE11]Она просит подождать ее на улице, пока она сходит переодеть бикини. Подождешь?[IMAGE classmate.jpg]
 																																	Без проблем!
 																																		[mark_uw7s29w54k7rz886dsav]Ты вышел на улицу. Постоял минут двадцать. Что-то долго её нет... а рядом во дворе знакомые пацаны пьют пиво.[IMAGE boys_drink_beer.jpg]
 																																			Подожду еще.
@@ -876,21 +876,21 @@
 													[GOTO yes_open_the_door]
 											[GOTO entering_the_gates]
 							Пройду мимо.
-								[mark_8ao73a15j7r01imlf02a][GOTO EPISODE1]
+								[mark_8ao73a15j7r01imlf02a][GOTO stand_in_front_of_gates]
 						[in_the_yard7]В подъезде ты встретил старика, он громко ругается.[IMAGE pensioner.jpg]
 							Спрошу, в чем причина?
 								[mark_siw62ihoiv35e682oot4]Пенсионер: "Почему у меня, бывшего полковника СССР пенсия в два раза меньше, чем у соседской пенсионерки, бывшей секретутки из обкома?"[IMAGE pensioner.jpg]
 									Пойду дальше.
-										[mark_m89e25w33u3y432zq5nm][GOTO EPISODE1]
+										[mark_m89e25w33u3y432zq5nm][GOTO stand_in_front_of_gates]
 							Пройду мимо.
-								[mark_39b67271cvjj7kyp92sn][GOTO EPISODE1]
+								[mark_39b67271cvjj7kyp92sn][GOTO stand_in_front_of_gates]
 						[in_the_yard8]Во дворе дома ты встретил знакомого пенсионера, участника ВОВ. Он грустно посмотрел на тебя.[IMAGE pensioner2.jpg]
 							Спрошу, что у него случилось?
 								[mark_0zosej10p4o4rui14pk9]Пенсионер: "Сходил, заплатил за квартиру, и пенсии не хватило на лекарства. А ведь я воевал за нашу родину, чтобы всем хорошо жилось..."[IMAGE pensioner2.jpg]
 									Пойду дальше.
-										[mark_3uf4dm83t228jp1y2kzi][GOTO EPISODE1]
+										[mark_3uf4dm83t228jp1y2kzi][GOTO stand_in_front_of_gates]
 							Пройду мимо.
-								[mark_03s579mbd5c3t7735sd7][GOTO EPISODE1]
+								[mark_03s579mbd5c3t7735sd7][GOTO stand_in_front_of_gates]
 			Проигнорирую.
 				[mark_128j2s6m48h4gb54jic5][GOTO next_week_knock_knock]
 			Мне все равно, я живу на съемной хате.
@@ -914,7 +914,7 @@
 					У меня отсрочка.
 						[mark_p2g3b5tvj66fp96b37qd]Возможно это какая-то ошибка. Лучше сходить выяснить.[IMAGE notification.jpg]
 							>>>
-								[mark_53c49gprs94yqr055g4u][GOTO EPISODE1]
+								[mark_53c49gprs94yqr055g4u][GOTO stand_in_front_of_gates]
 					Я женского пола.
 						[Mark_Final203][FINAL У тебя два варианта: представить себя призывником или дать сыграть своему мужчине.][IMAGE notification.jpg]
 					Я полковник.
