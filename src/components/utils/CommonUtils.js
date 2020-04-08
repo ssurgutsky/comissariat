@@ -112,7 +112,7 @@ export default {
       return []
     }
     let result = []
-    if (sequence.indexOf('||')) {
+    if (sequence.indexOf('||') >= 0) {
       // by random
       result = sequence.split('||')
       result = this.shuffle(result)
