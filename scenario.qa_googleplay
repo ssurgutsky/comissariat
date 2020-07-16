@@ -459,7 +459,7 @@
 																																																																																																																																																																																																																																																												[mark_qxqh25b89gudlmvv2h16]Ответчик в суде: Ничего.[IMAGE colonel_in_court.jpg]
 																																																																																																																																																																																																																																																													>>>
 																																																																																																																																																																																																																																																														[Mark_Final1]Суд признал твою правоту. Главный положительный финал![BGNDVIDEO Titles][AMBIENT none]
-																																																																																																																																																																																																																																																															[GOTO donate]
+																																																																																																																																																																																																																																																															[GOTO buy_episodes]
 																																																																																																																																																																																																																																																			Армия должна обучать военному делу, а не использовать солдат, как дешевую рабочую силу.
 																																																																																																																																																																																																																																																				[mark_oc4uwx94e924xjgu5s2k][FINAL Суд удовлетворил твой иск и постановил начальнику военкомата направить тебя служить по истинно военному профилю - в ВДВ. Нейтральный финал][IMAGE airborn.jpg]
 																																																																																																																																																																																																																																																	Желание заменить военную службу на альтернативно-гражданскую.
@@ -926,8 +926,18 @@
 						[infinite_loop]Скоротаем вечерок?[IMAGE evening.jpg]
 							Так точно!
 								[mark_64053x2uu54m9bzo6z86][GOTO infinite_loop]
-			[donate]Достать лопатник.
-				[mark_go65w1464p50j72qa99r][NAVIGATEURL https://money.yandex.ru/embed/shop.xml?account=41001220674141&quickpay=shop&payment-type-choice=on&writer=seller&targets=На развитие проекта&targets-hint=&default-sum=50&button-text=01&mail=on" width="450" height="199"]
+			[GOTO buy_episodes]
+	[buy_episodes]Эпизоды игры.
+		[mark_7ay0crivt5fo2krptr7j]{this.productId = "com.kri_games.voenkomat.episodes";'';}{script getPayment}
+			
+				[wait2]...[IMAGE episodes.jpg][AUDIO silent_3]
 					
-						[mark_6668j59589c13761ut97][GOTO START]
-	[GOTO donate]
+						[mark_7u249b2lf7c472494fvi]{script checkPayment2}
+							
+								[payment_success2]...[IMAGE episodes.jpg][PURCHASE cheats]
+									
+										[mark_lo9fb6iz5619s1v1w24v]Кнопка переключения эпизодов "EPISODE" появилась внизу. Она будет доступна всегда, пока ты не удалишь игру.[IMAGE episodes.jpg]
+											>>>
+												[mark_790313417a53d817ku7r][GOTO START]
+								[payment_fail2]Что то не так, попробуй еще раз.[IMAGE episodes.jpg]
+									[GOTO buy_episodes]
