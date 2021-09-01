@@ -80,7 +80,8 @@
     "webpack": "^3.6.0",
     "webpack-bundle-analyzer": "^2.9.0",
     "webpack-dev-server": "^2.9.1",
-    "webpack-merge": "^4.1.0"
+    "webpack-merge": "^4.1.0",
+    "cordova-plugin-splashscreen": "^5.0.2"
   },
   "engines": {
     "node": ">= 6.0.0",
@@ -97,7 +98,8 @@
       "cordova-plugin-inappbrowser": {},
       "cordova-plugin-purchase": {
         "BILLING_KEY": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtIeLhjBPWzJAjScBibgdlGCDbyE5HR0X5rWLHIkQAkuz5gMrn14RIAR6wdlkrNFfcy5VCIwFcC2a2i8URXiriKaeNiJQubaWYjN+NxI13wUlqLwMVeitTWljmdtq63T9lFr9uiaGjNRgDIKwPlIsaqwqf1+RRSwLHbw6dXlKHUL06TpERm4hOz80mk6HqwOKbdqN2yNpo19yuyAoZrpnnNDZ3QhJ6BJvxQ6rQyuas+++qokpXFd7PjVB6JK2O7Z1Qb+qNAPQ/zbOlYvYD9pHgrAEDTsy2khR4m1KydoleToW60gOUnGX9Cqi+7doXU/TsViVukr8M/5fYIp8l4ZviQIDAQAB"
-      }
+      },
+      "cordova-plugin-splashscreen": {}
     },
     "platforms": [
       "android"

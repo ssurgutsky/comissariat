@@ -5188,7 +5188,7 @@
             }
           ],
           "_mark": "START",
-          "_content": "[LABEL Voenkomat v1.1{this.lang='ru';''}{script initSystem}][BGNDVIDEO Intro][AMBIENT NONE][ANSWERSORDER ON]"
+          "_content": "[LABEL Военкомат v1.{this.game_version}\nСимулятор призывника.{this.lang='ru';''}{script initSystem}][BGNDVIDEO Intro][AMBIENT NONE][ANSWERSORDER ON]"
         }
       ]
     }

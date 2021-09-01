@@ -1,4 +1,4 @@
-[START]Voenkomat v1.1[BGNDVIDEO Intro][AMBIENT NONE][ANSWERSORDER ON]{this.lang='ru';''}{script initSystem}
+[START]Военкомат v1.{this.game_version}\nСимулятор призывника.[BGNDVIDEO Intro][AMBIENT NONE][ANSWERSORDER ON]{this.lang='ru';''}{script initSystem}
 	НАЧАТЬ ИГРУ / START GAME
 		[GAME_SAVEPOINT]Несколько дней назад тебе пришла повестка. В ней было написано, что сегодня ты должен явиться в военкомат. Что будешь делать?[BGNDVIDEO none][IMAGE notification.jpg][AMBIENT before]
 			Придется идти в военкомат.
