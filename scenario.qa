@@ -1,4 +1,4 @@
-[START]Voenkomat v1.1[BGNDVIDEO Intro][AMBIENT NONE][ANSWERSORDER OFF]{this.lang='ru';''}{script initSystem}
+[START]Voenkomat v1.1[BGNDVIDEO Intro][AMBIENT NONE][ANSWERSORDER ON]{this.lang='ru';''}{script initSystem}
 	НАЧАТЬ ИГРУ / START GAME
 		[GAME_SAVEPOINT]Несколько дней назад тебе пришла повестка. В ней было написано, что сегодня ты должен явиться в военкомат. Что будешь делать?[BGNDVIDEO none][IMAGE notification.jpg][AMBIENT before]
 			Придется идти в военкомат.
@@ -460,6 +460,7 @@
 																																																																																																																																																																																																																																																													>>>
 																																																																																																																																																																																																																																																														[Mark_Final1]Суд признал твою правоту. Главный положительный финал![BGNDVIDEO Titles][AMBIENT none]
 																																																																																																																																																																																																																																																															[GOTO donate]
+																																																																																																																																																																																																																																																															[GOTO ddonate]
 																																																																																																																																																																																																																																																			Армия должна обучать военному делу, а не использовать солдат, как дешевую рабочую силу.
 																																																																																																																																																																																																																																																				[mark_oc4uwx94e924xjgu5s2k][FINAL Суд удовлетворил твой иск и постановил начальнику военкомата направить тебя служить по истинно военному профилю - в ВДВ. Нейтральный финал][IMAGE airborn.jpg]
 																																																																																																																																																																																																																																																	Желание заменить военную службу на альтернативно-гражданскую.
@@ -927,7 +928,12 @@
 							Так точно!
 								[mark_64053x2uu54m9bzo6z86][GOTO infinite_loop]
 			[donate]Достать лопатник.
-				[mark_go65w1464p50j72qa99r][NAVIGATEURL https://money.yandex.ru/embed/shop.xml?account=41001220674141&quickpay=shop&payment-type-choice=on&writer=seller&targets=На развитие проекта&targets-hint=&default-sum=50&button-text=01&mail=on" width="450" height="199"]
+				[mark_v2r3fay37ksl69b2u4a0][NAVIGATEURL https://money.yandex.ru/embed/shop.xml?account=41001220674141&quickpay=shop&payment-type-choice=on&writer=seller&targets=На развитие проекта&targets-hint=&default-sum=50&button-text=01&mail=on" width="450" height="199"]
 					
 						[mark_6668j59589c13761ut97][GOTO START]
+			[ddonate]Закивасить.
+				[mark_t319971dwu2865mjn7qo][NAVIGATEURL https://qiwi.com/n/SERJIOS]
+					
+						[mark_8r456ve83222mbv60b0m][GOTO START]
 	[GOTO donate]
+	[GOTO ddonate]
