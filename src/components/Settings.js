@@ -2,9 +2,9 @@
 
 export default {
   // Increase this on every update to reload assets for new on startup
-  GAME_VERSION: 25,
+  GAME_VERSION: 26,
   // Release = true
-  CACHE_ENABLED: true,
+  CACHE_ENABLED: false,
 
   GAME_VERSION_VAR_NAME: 'game_version',
   GAME_UPGRADE_POINT: 'GAME_UPGRADEPOINT',
@@ -19,8 +19,10 @@ export default {
   // You can enable some buttons by default in the regular game
   ENABLE_SAVE_BUTTON: true,
   ENABLE_LOAD_BUTTON: true,
-  ENABLE_SKIP_BUTTON: false,
+  ENABLE_SKIP_BUTTON: true,
   ENABLE_EPISODES_BUTTON: false,
   ENABLE_BACK_BUTTON: false,
-  ENABLE_DONATE_BUTTON: true
+  ENABLE_DONATE_BUTTON: true,
+
+  ENABLE_SPEECH: false // window.speechSynthesis !== undefined
 }
