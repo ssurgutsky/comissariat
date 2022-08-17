@@ -1,0 +1,11 @@
+Interactive video quest "Trip to the commissariat".
+How to play: read the message and select your answer from the list below.
+
+Scenario: you've got the summon to the military registration and enlistment office. But you don't want to go to the army, you'd like to study at the university. Try to find a way to avoid the army.
+
+Features:
+- in total 26 possible finals (1 main only)
+- train your skills to talk with people
+
+Warning! Full features of the application might not be available in devices that do not support the Russian  language.
+

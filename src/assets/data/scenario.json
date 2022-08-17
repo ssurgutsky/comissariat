@@ -5142,11 +5142,11 @@
                             }
                           ],
                           "_mark": "mark_v2r3fay37ksl69b2u4a0",
-                          "_content": "[LABEL ][NAVIGATEURL https://money.yandex.ru/embed/shop.xml?account=41001220674141&quickpay=shop&payment-type-choice=on&writer=seller&targets=На развитие проекта&targets-hint=&default-sum=50&button-text=01&mail=on\" width=\"450\" height=\"199\"]"
+                          "_content": "[LABEL ][NAVIGATEURL https://sobe.ru/na/serjios]"
                         }
                       ],
                       "_mark": "donate",
-                      "_content": "[LABEL Достать лопатник.]"
+                      "_content": "[LABEL На развитие проекта (sobe.ru/na/serjios)]"
                     },
                     {
                       "node": [
@@ -5168,7 +5168,7 @@
                         }
                       ],
                       "_mark": "ddonate",
-                      "_content": "[LABEL Закивасить.]"
+                      "_content": "[LABEL Донат Сержиосу (qiwi.com/n/SERJIOS)]"
                     }
                   ],
                   "_mark": "GAME_SAVEPOINT",
