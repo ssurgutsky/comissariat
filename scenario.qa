@@ -460,7 +460,6 @@
 																																																																																																																																																																																																																																																													>>>
 																																																																																																																																																																																																																																																														[Mark_Final1]Суд признал твою правоту. Главный положительный финал![BGNDVIDEO Titles][AMBIENT none]
 																																																																																																																																																																																																																																																															[GOTO donate]
-																																																																																																																																																																																																																																																															[GOTO ddonate]
 																																																																																																																																																																																																																																																			Армия должна обучать военному делу, а не использовать солдат, как дешевую рабочую силу.
 																																																																																																																																																																																																																																																				[mark_oc4uwx94e924xjgu5s2k][FINAL Суд удовлетворил твой иск и постановил начальнику военкомата направить тебя служить по истинно военному профилю - в ВДВ. Нейтральный финал][IMAGE airborn.jpg]
 																																																																																																																																																																																																																																																	Желание заменить военную службу на альтернативно-гражданскую.
@@ -927,13 +926,18 @@
 						[infinite_loop]Скоротаем вечерок?[IMAGE evening.jpg]
 							Так точно!
 								[mark_64053x2uu54m9bzo6z86][GOTO infinite_loop]
-			[donate]На развитие проекта (sobe.ru/na/serjios)
-				[mark_v2r3fay37ksl69b2u4a0][NAVIGATEURL https://sobe.ru/na/serjios]
-					
-						[mark_6668j59589c13761ut97][GOTO START]
-			[ddonate]Донат Сержиосу (qiwi.com/n/SERJIOS)
-				[mark_t319971dwu2865mjn7qo][NAVIGATEURL https://qiwi.com/n/SERJIOS]
-					
-						[mark_8r456ve83222mbv60b0m][GOTO START]
+			[donate]Donate / Дать денежку
+				[mark_8o716rk6f9gm5w4vo191][IMAGE donate.png]Если понравилось, закинь сколько не жалко.
+					Перевод Tinkoff
+						[mark_f80u11uv548604r8v3v5][NAVIGATEURL https://www.tinkoff.ru/cf/7xIiPBRWF9P]
+							
+								[mark_gpz4h2d5q2gj83yqc71b][GOTO START]
+					Перевод Qiwi
+						[mark_n4f3t5qf3l1tjoui2c2f][NAVIGATEURL https://qiwi.com/n/SERJIOS]
+							
+								[mark_xw21sf4q2mxo3q0x9b78][GOTO START]
+					Перевод YooMoney
+						[mark_iz89w1lh9902e1966gt6][NAVIGATEURL https://yoomoney.ru/to/41001220674141]
+							
+								[mark_06z79l0n6q345b2ni5q2][GOTO START]
 	[GOTO donate]
-	[GOTO ddonate]
